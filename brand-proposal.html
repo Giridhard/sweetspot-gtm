@@ -3,8 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brand Launch Proposal — [Brand Name] sc-FOS | Inspire Labs</title>
+<title>Brand Launch Proposal — sc-FOS Prebiotic Sweetener | Inspire Labs</title>
 <link rel="stylesheet" href="assets/brand.css">
+<style>
+/* ── Proposal-specific overrides ── */
+.name-card { background: var(--warm); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px; position: relative; }
+.name-card h3 { font-size: 28px; font-weight: 800; margin-bottom: 4px; letter-spacing: -0.02em; }
+.name-card .phonetic { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--grey); margin-bottom: 12px; }
+.name-card .meaning { font-size: 15px; color: var(--ink-70); margin-bottom: 16px; font-style: italic; }
+.name-card .scores { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 16px; }
+.name-card .score-item { text-align: center; padding: 8px; background: var(--white); border-radius: var(--radius-sm); border: 1px solid var(--border); }
+.name-card .score-item .score-val { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 18px; color: var(--ink); }
+.name-card .score-item .score-lbl { font-size: 11px; color: var(--grey); text-transform: uppercase; letter-spacing: 0.05em; }
+.name-tier { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 20px; display: inline-block; margin-bottom: 12px; }
+.tier-gold { background: rgba(212,160,23,0.12); color: #8B6914; }
+.tier-silver { background: rgba(111,117,131,0.10); color: var(--grey); }
+.tier-bronze { background: rgba(193,68,14,0.10); color: #C1440E; }
+.budget-phase { background: var(--warm); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 16px; }
+.budget-phase h3 { font-size: 20px; font-weight: 800; margin-bottom: 4px; }
+.budget-phase .phase-total { font-family: 'JetBrains Mono', monospace; font-size: 28px; font-weight: 700; color: var(--ink); }
+.budget-phase .phase-period { font-size: 13px; color: var(--grey); }
+.line-item-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+.line-item-table th { text-align: left; padding: 8px 12px; border-bottom: 2px solid var(--border-dark); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--grey); }
+.line-item-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+.line-item-table .num { text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+.line-item-table .sub-item { padding-left: 28px; color: var(--ink-70); font-size: 13px; }
+.line-item-table .total-row td { border-top: 2px solid var(--ink); font-weight: 700; background: var(--warm); }
+.spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+.spec-panel { background: var(--warm); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 16px; }
+.spec-panel h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+.spec-row-sm { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+.spec-row-sm:last-child { border-bottom: none; }
+.spec-row-sm .lbl { color: var(--grey); }
+.spec-row-sm .val { font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+.month-bar { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.month-bar .month-label { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; width: 32px; flex-shrink: 0; }
+.month-bar .bar { height: 24px; border-radius: 4px; display: flex; align-items: center; padding: 0 8px; font-size: 11px; font-weight: 600; color: var(--white); }
+.month-bar .bar-amount { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-70); margin-left: 8px; }
+</style>
 </head>
 <body>
 <nav class="il-nav">
@@ -15,9 +51,13 @@
     <div class="il-nav-dropdown-menu">
       <a href="gtm-playbook.html">GTM Playbook</a>
       <a href="execution-playbook.html">Execution Playbook</a>
-      <a href="brand-strategy.html">Brand Strategy Bible</a>
+      <a href="master-playbook.html">Master GTM Playbook</a>
       <a href="competitive-intelligence.html">Competitive Intelligence</a>
+      <a href="brand-strategy.html">Brand Strategy Bible</a>
       <a href="consumer-trends.html">Consumer Trends</a>
+      <a href="gantt-timeline.html">Gantt Timeline</a>
+      <a href="international-expansion.html">International Expansion</a>
+      <a href="retail-shelf-strategy.html">Retail Shelf Strategy</a>
     </div>
   </div>
   <div class="il-nav-dropdown">
@@ -26,25 +66,52 @@
       <a href="brand-proposal.html">Brand Proposal</a>
       <a href="brand-identity.html">Brand Identity Manual</a>
       <a href="brand-naming.html">Brand Naming Research</a>
+      <a href="brand-voice.html">Brand Voice & Tone</a>
       <a href="visual-identity.html">Visual Identity System</a>
       <a href="packaging-design.html">Packaging Design Bible</a>
+      <a href="packaging-system.html">Packaging Design System</a>
+      <a href="photography-creative.html">Photography & Ad Creative</a>
+      <a href="pitch-deck-guide.html">Pitch Deck Guide</a>
+      <a href="unboxing-display.html">Unboxing & Retail Display</a>
+      <a href="customer-brand.html">Customer Brand Playbook</a>
     </div>
   </div>
   <div class="il-nav-dropdown">
     <a class="il-nav-link" href="#">Marketing & Growth</a>
     <div class="il-nav-dropdown-menu">
-      <a href="growth-seo.html">SEO Growth</a>
+      <a href="growth-seo.html">SEO Growth Playbook</a>
       <a href="growth-performance.html">Performance Marketing</a>
+      <a href="growth-quick-commerce.html">Quick Commerce</a>
+      <a href="growth-ecommerce.html">E-commerce & Offline & D2C</a>
+      <a href="growth-influencer.html">Influencer & Community</a>
       <a href="amazon-mastery.html">Amazon Mastery</a>
-      <a href="content-social.html">Content & Social</a>
+      <a href="amazon-optimization.html">Amazon Optimization</a>
+      <a href="content-social.html">Content & Social Plan</a>
+      <a href="marketplace-intelligence.html">Marketplace Intelligence</a>
+      <a href="marketing-ops.html">Marketing Operations</a>
+      <a href="pr-community.html">PR & Community</a>
+      <a href="website-blueprint.html">Website Blueprint</a>
+      <a href="website-ux.html">Website UX Design</a>
+      <a href="d2c-case-studies.html">D2C Case Studies</a>
     </div>
   </div>
   <div class="il-nav-dropdown">
     <a class="il-nav-link" href="#">Operations & Legal</a>
     <div class="il-nav-dropdown-menu">
-      <a href="legal-framework.html">Legal Framework</a>
-      <a href="supply-chain.html">Supply Chain</a>
       <a href="digital-infrastructure.html">Digital Infrastructure</a>
+      <a href="product-rd.html">Product R&D</a>
+      <a href="supply-chain.html">Supply Chain</a>
+      <a href="sales-playbook.html">Sales Playbook</a>
+      <a href="b2b-horeca.html">B2B & HoReCa</a>
+      <a href="legal-framework.html">Legal Framework</a>
+      <a href="regulatory-manual.html">Regulatory Manual</a>
+      <a href="ip-patent.html">IP & Patent Strategy</a>
+      <a href="patent-strategy.html">Patent IP Strategy</a>
+      <a href="healthcare-outreach.html">Healthcare Outreach</a>
+      <a href="government-schemes.html">Government Schemes</a>
+      <a href="subscription-retention.html">Subscription & Retention</a>
+      <a href="sustainability-esg.html">Sustainability & ESG</a>
+      <a href="partnerships.html">Partnerships & Co-Branding</a>
     </div>
   </div>
   <div class="il-nav-dropdown">
@@ -58,28 +125,26 @@
 </nav>
 
 
-
-<!-- ══ NAV ══ -->
-
-
 <!-- ══ HERO ══ -->
 <div class="hero">
   <div class="badge">Strictly Confidential</div>
   <h1>Building India's First<br><em>Prebiotic Sugar Replacer</em> Brand</h1>
-  <p class="sub">Brand naming, identity, and initial investment proposal for the sc-FOS consumer brand — from Inspire Labs to Revelations Biotech.</p>
+  <p class="sub">Complete brand proposal — naming candidates, packaging design, identity system, and the full ₹10Cr investment plan. From Inspire Labs to Revelations Biotech.</p>
   <div class="meta-row">
     <span>Prepared by <strong>Inspire Labs</strong></span>
-    <span></span>
+    <span>For <strong>Ashok Reddy, CEO — Revelations Biotech</strong></span>
     <span>Date <strong>May 2026</strong></span>
   </div>
 </div>
 
-<!-- ══ SECTION 1: WHY WE'RE HERE ══ -->
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 1: CONTEXT                        -->
+<!-- ══════════════════════════════════════════ -->
 <div class="container">
 <section>
   <div class="section-label">01 · Context</div>
   <div class="section-title">The Opportunity</div>
-  <div class="section-desc">Revelations Biotech manufactures sc-FOS — a prebiotic fiber that tastes like sugar, feeds gut bacteria, and costs 28.6% less than the nearest branded competitor. No consumer brand exists for it yet. This document covers three decisions needed before anything else moves: what to name the brand, what it should look and feel like, and what the initial investment is to bring it to life.</div>
+  <div class="section-desc">Revelations Biotech manufactures sc-FOS — a prebiotic fiber that tastes like sugar, feeds gut bacteria, and costs 28.6% less than the nearest branded competitor. No consumer brand exists for it in India. This document covers four decisions needed before anything else moves: what to name the brand, what the packaging looks like, what the identity system is, and the full ₹10Cr investment to build it.</div>
 
   <div class="stat-row">
     <div class="stat-box">
@@ -87,347 +152,704 @@
       <div class="label">sc-FOS Cost (vs ₹350 Tata NQ)</div>
     </div>
     <div class="stat-box">
-      <div class="value">₹8,200<span>Cr</span></div>
-      <div class="label">India Sugar Substitute Market (2026)</div>
+      <div class="value">$3.34<span>B</span></div>
+      <div class="label">India Sweetener Market (2025)</div>
     </div>
     <div class="stat-box">
       <div class="value">0</div>
       <div class="label">Branded sc-FOS Products Today</div>
     </div>
+    <div class="stat-box">
+      <div class="value">₹10<span>Cr</span></div>
+      <div class="label">Total At-Cost Investment</div>
+    </div>
   </div>
 
   <div class="callout">
     <div class="icon">&#9670;</div>
-    <div class="text"><strong>Why now:</strong> Sugar Free (sucralose) dominates with 94% recall but carries "chemical" perception. Stevia brands remain niche due to bitter aftertaste. sc-FOS is the only sweetener that is prebiotic, tastes identical to sugar, and has zero aftertaste — a positioning gap no one has claimed.</div>
+    <div class="text"><strong>Why now:</strong> Sugar Free dominates with 94% recall but carries "chemical" perception. Stevia remains niche due to bitter aftertaste. PepsiCo paid $1.95B for prebiotic soda brand Poppi (March 2025). Cosmix was acquired by Marico at ₹375Cr valuation. The Whole Truth hit ₹216Cr in FY25 with 232% YoY growth. Indian consumers are paying premium for clean-label health food — and no one has claimed the prebiotic sweetener position.</div>
   </div>
 </section>
 
-<!-- ══ SECTION 2: BRAND NAMING ══ -->
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 2: BRAND NAMING                   -->
+<!-- ══════════════════════════════════════════ -->
 <section id="names">
   <div class="section-label">02 · Brand Naming</div>
-  <div class="section-title">Naming Strategy</div>
-  <div class="section-desc">Brand name is the single most consequential decision before anything else moves. The naming process follows a structured methodology designed for the Indian FMCG sweetener category.</div>
+  <div class="section-title">10 Name Candidates</div>
+  <div class="section-desc">Each name was evaluated against six criteria: memorability (can someone recall it after hearing once?), meaning and relevance (does it evoke sweetness, health, or natural origin?), bilingual fluency (does it work in Hindi and English, can a Tier 2 shopkeeper say it?), domain availability (.com/.in), trademark clearance risk (India Class 30 + Class 5), and shelf presence (will it stand out next to Sugar Free?). Scores are out of 10.</div>
 
   <div class="warm-panel">
-    <h3>Naming Criteria Framework</h3>
+    <h3>Naming Criteria Recap</h3>
     <table>
       <thead>
-        <tr><th>Criterion</th><th>What It Measures</th><th>Weight</th></tr>
+        <tr><th>Criterion</th><th>What It Measures</th><th style="text-align:right;">Weight</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Memorability</strong></td><td>Can someone recall the name after hearing it once? Does it stick? Is it easy to spell?</td><td class="num">20%</td></tr>
-        <tr><td><strong>Meaning & Relevance</strong></td><td>Does the name communicate sweetness, gut health, or natural origin?</td><td class="num">20%</td></tr>
-        <tr><td><strong>Bilingual Fluency</strong></td><td>Does it work in both Hindi and English? Can a shopkeeper in Tier 2 say it comfortably?</td><td class="num">15%</td></tr>
-        <tr><td><strong>Domain & Handle Availability</strong></td><td>Is .com / .in available or acquirable? Are social handles clean?</td><td class="num">15%</td></tr>
-        <tr><td><strong>Trademark Clearance</strong></td><td>Risk of conflicts in Class 30 (food additives) and Class 5 (dietary supplements) in India</td><td class="num">15%</td></tr>
-        <tr><td><strong>Shelf Presence</strong></td><td>Will it stand out on a retail shelf next to Sugar Free, Tata NQ, and stevia brands?</td><td class="num">15%</td></tr>
+        <tr><td><strong>Memorability</strong></td><td>Recall after single exposure. Easy to spell. 1-2 syllables preferred.</td><td class="num">20%</td></tr>
+        <tr><td><strong>Meaning & Relevance</strong></td><td>Evokes sweetness, health, warmth, or natural origin without being on-the-nose.</td><td class="num">20%</td></tr>
+        <tr><td><strong>Bilingual Fluency</strong></td><td>Works in Hindi conversation. No awkward pronunciation. A chai-stall owner in Nagpur can say it.</td><td class="num">15%</td></tr>
+        <tr><td><strong>Domain & Handles</strong></td><td>.com or .in available/acquirable. Instagram handle clean or negotiable.</td><td class="num">15%</td></tr>
+        <tr><td><strong>Trademark Clearance</strong></td><td>Low conflict risk in India Class 30 (food additives) and Class 5 (dietary supplements).</td><td class="num">15%</td></tr>
+        <tr><td><strong>Shelf Presence</strong></td><td>Looks commanding on a gold hexagonal jar. Works in foil stamping. Not generic.</td><td class="num">15%</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="card-grid">
-    <div class="card" style="border-top: 3px solid var(--orange);">
-      <div class="rank">Phase 1 · Week 1</div>
-      <h3>Discovery & Long-List</h3>
-      <p>Workshop with Revelations leadership to define brand territory, emotional positioning, and naming guardrails. Generate 50+ candidate names across 3 directions: Indian Heritage, Modern Global, and Science-Meets-Lifestyle. Narrow to 12 via internal scoring.</p>
+  <!-- TIER 1: STRONGEST -->
+  <h3 style="margin-top:40px; font-size:18px;"><span class="name-tier tier-gold">Tier 1 — Strongest Candidates</span></h3>
+  <p style="color:var(--grey); margin-bottom:20px;">These three names scored highest across all six criteria. Any of them can carry a ₹500Cr brand.</p>
+
+  <div class="name-card" style="border-left: 4px solid #D4A017;">
+    <span class="name-tier tier-gold">Recommend</span>
+    <h3 style="color:#D4A017;">AURAA</h3>
+    <div class="phonetic">/aw-RAA/ · ऑरा</div>
+    <div class="meaning">From Latin "aurum" (gold) + the double-A gives it an Indian cadence (like Tara, Arya). The name literally means gold — matching the brand's entire visual DNA.</div>
+    <p><strong>Why it works:</strong> AURAA is the only name where the name, the color system, the packaging, and the cultural meaning all point to the same thing: gold. In Indian culture, gold is the most auspicious element — Lakshmi, weddings, Dhanteras. On a hexagonal gold jar with a bamboo cap, "AURAA" in Playfair Display foil-stamped in gold on cream reads as a ₹1,000 product sold at ₹249. It is premium without pretension. A mom in Banjara Hills says "pass me the Auraa" as naturally as a gym-goer in Koramangala says "I switched to Auraa." The word exists in English ("aura" = radiance, energy field), making it globally portable for export. Two syllables. Five letters. One dominant vowel sound. Easy to spell after hearing once.</p>
+    <p><strong>Tagline pairing:</strong> "AURAA — Sweetness That Glows." / "AURAA — Your Daily Gold."</p>
+    <p><strong>Hindi resonance:</strong> "ऑरा" sounds natural in Hindi. "Yeh Auraa daal do chai mein" (Put some Auraa in the tea) — flows effortlessly. The double-A ending mirrors Indian name patterns (Amara, Tara, Sitara).</p>
+    <p><strong>Shelf test:</strong> Imagine the sweetener aisle — green Sugar Free, blue Equal, brown stevia packets. Then a gold hexagonal jar with "AURAA" in warm serif type. It doesn't compete with them; it exists in a different universe.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">9.5</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">9.5</div><div class="score-lbl">Shelf</div></div>
     </div>
-    <div class="card" style="border-top: 3px solid var(--orange);">
-      <div class="rank">Phase 2 · Week 2</div>
-      <h3>Research & Short-List</h3>
-      <p>Consumer pulse survey (200 respondents, 4 metros) testing top 12 names for recall, likability, and category association. Preliminary TM search (India Class 30 + Class 5). Narrow to top 3 finalists with data backing.</p>
+  </div>
+
+  <div class="name-card" style="border-left: 4px solid #D4A017;">
+    <span class="name-tier tier-gold">Strong</span>
+    <h3 style="color:#D4A017;">NOOR</h3>
+    <div class="phonetic">/noor/ · नूर</div>
+    <div class="meaning">Urdu/Hindi/Arabic for "light, radiance, divine glow." One of the most beautiful words in the Hindustani language. Universally understood across India.</div>
+    <p><strong>Why it works:</strong> NOOR carries deep emotional resonance across Hindu, Muslim, Sikh, and secular Indian audiences — it transcends religion and means pure radiance. As a sweetener brand, it says "this lights up your food and your health." The word is already in everyday Indian vocabulary ("uska noor hi alag hai"), so zero education cost on pronunciation. Four letters. One syllable. Impossible to misspell. On gold packaging, NOOR reads like a jewelry brand that happened to make food — which is exactly the premium positioning this product needs. The sound is warm, round, and inviting — the phonetic opposite of clinical names like "Sugar Free" or "Equal."</p>
+    <p><strong>Tagline pairing:</strong> "NOOR — Light In Every Spoon." / "NOOR — The Glow of Good Sugar."</p>
+    <p><strong>Risk:</strong> "Noor" is a common first name and may have some trademark congestion. Needs thorough Class 30 search. Multiple brands use "Noor" in cosmetics/beauty but fewer in food. ".com" likely unavailable; "noorsweetener.in" or "getnoor.in" are viable alternatives.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">10</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">10</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">6.0</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">6.5</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Shelf</div></div>
     </div>
-    <div class="card" style="border-top: 3px solid var(--orange);">
-      <div class="rank">Phase 3 · Week 3</div>
-      <h3>Lock & Protect</h3>
-      <p>Comprehensive TM search on top 3 (₹15K, 5-day turnaround). Domain acquisition (.com, .in, .co.in, .health). Social handle reservation across Instagram, Twitter, YouTube, Facebook. TM filing. Final name selected.</p>
+  </div>
+
+  <div class="name-card" style="border-left: 4px solid #D4A017;">
+    <span class="name-tier tier-gold">Strong</span>
+    <h3 style="color:#D4A017;">SOLRA</h3>
+    <div class="phonetic">/SOHL-rah/ · सोलरा</div>
+    <div class="meaning">Evokes "sol" (sun, gold, warmth in Latin/Spanish) + "-ra" suffix common in Indian brand names. A completely invented word with built-in warmth.</div>
+    <p><strong>Why it works:</strong> SOLRA sounds like it has always existed. It has the warmth of "solar" without being literally solar. The -ra ending is extremely natural in Indian languages (Meera, Sitara, Amara), making it feel indigenous even though it is invented. As a blank-canvas name, it carries zero baggage — no existing brand associations to fight. Five letters. Two syllables. The "Sol-" beginning triggers subliminal associations with sun, gold, warmth, and energy — exactly what you want for a golden prebiotic sweetener. In Playfair Display on a gold jar, "SOLRA" has visual weight and elegance. It sounds like a ₹2,000Cr company.</p>
+    <p><strong>Tagline pairing:</strong> "SOLRA — Sweetness From the Sun." / "SOLRA — Naturally Radiant."</p>
+    <p><strong>Trademark advantage:</strong> As a coined word, SOLRA has the strongest trademark defensibility of any name on this list. No prior use in Indian food categories. .com availability strong for coined words.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">9.5</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Shelf</div></div>
+    </div>
+  </div>
+
+  <!-- TIER 2: STRONG ALTERNATIVES -->
+  <h3 style="margin-top:40px; font-size:18px;"><span class="name-tier tier-silver">Tier 2 — Strong Alternatives</span></h3>
+  <p style="color:var(--grey); margin-bottom:20px;">Different strategic directions. Any could be the winner depending on the founder's instinct.</p>
+
+  <div class="name-card" style="border-left: 4px solid var(--grey);">
+    <span class="name-tier tier-silver">Lifestyle Play</span>
+    <h3>BARE</h3>
+    <div class="phonetic">/bair/ · बेयर</div>
+    <div class="meaning">English: minimal, nothing to hide, transparent, stripped-down truth. The clean-label D2C ethos in four letters.</div>
+    <p><strong>Why it works:</strong> BARE is the anti-Sugar Free. Where Sugar Free hides behind chemical names and clinical packaging, BARE says "we have nothing to hide — look at our single ingredient." It taps the same transparent-label movement that built The Whole Truth into a ₹216Cr brand. Four letters. One syllable. Impossible to forget. The word works in Hindi conversation ("woh BARE sweetener use karti hai"). On a minimalist gold jar with just the word "BARE" and nothing else, it is devastatingly simple. The risk: "Bare" could feel cold or empty to some Indian consumers who associate food with warmth and abundance.</p>
+    <p><strong>Tagline pairing:</strong> "BARE — Just FOS. Nothing Else." / "BARE — The Honest Sweetener."</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">9.5</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">7.0</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">7.0</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">7.5</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Shelf</div></div>
+    </div>
+  </div>
+
+  <div class="name-card" style="border-left: 4px solid var(--grey);">
+    <span class="name-tier tier-silver">Heritage Play</span>
+    <h3>DAYA</h3>
+    <div class="phonetic">/DAH-yah/ · दया</div>
+    <div class="meaning">Hindi/Sanskrit: kindness, compassion, grace. "Be kind to your body." A deeply emotional Indian word.</div>
+    <p><strong>Why it works:</strong> DAYA turns a sweetener into an act of self-care. "Daya karo apne pet pe" (show kindness to your gut) is a positioning that no food brand in India has claimed. The word is universally known — every Hindi speaker recognizes it instantly. It is warm, soft, and feminine-leaning in sound, which aligns with the primary buyer persona (health-conscious women, 28-45, who control household food decisions). Four letters. Two syllables. The name works as a standalone brand but also extends beautifully: Daya Original, Daya Gold, Daya Drops.</p>
+    <p><strong>Tagline pairing:</strong> "DAYA — Kindness In Every Spoon." / "DAYA — Sweet Compassion."</p>
+    <p><strong>Risk:</strong> "Daya" is also the name of a character in CID (TV show). Common as a first name. Needs TM search. The meaning might feel too soft for male consumers, though the health-food category skews female anyway.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">10</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">7.5</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">6.5</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">7.5</div><div class="score-lbl">Shelf</div></div>
+    </div>
+  </div>
+
+  <div class="name-card" style="border-left: 4px solid var(--grey);">
+    <span class="name-tier tier-silver">Direct Play</span>
+    <h3>GOLD DROP</h3>
+    <div class="phonetic">/gohld drop/ · गोल्ड ड्रॉप</div>
+    <div class="meaning">Literal and visual: a golden drop of sweetness. Describes what you see (golden powder/liquid) and what you do (drop it in your chai).</div>
+    <p><strong>Why it works:</strong> GOLD DROP is what Paper Boat is for beverages — a name that paints a picture. You can see it: a golden drop landing in a cup of chai. It is descriptive enough for instant category recognition ("Oh, it's a sweetener") and distinctive enough to own shelf space. The two-word structure follows the most successful naming pattern in Indian D2C (Paper Boat, Whole Truth, True Elements, Yoga Bar). "Gold Drop de do chai mein" is a perfectly natural Hindi sentence. The name practically writes its own ads: slow-motion golden powder cascading into a cup.</p>
+    <p><strong>Tagline pairing:</strong> "GOLD DROP — A Drop Changes Everything." / "GOLD DROP — Taste the Gold."</p>
+    <p><strong>Risk:</strong> Two words = longer. May feel less premium than a single coined word. "Gold Drop" could read as a cooking oil brand to some consumers. Needs very strong packaging design to anchor it in sweetener category.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">9.5</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Shelf</div></div>
+    </div>
+  </div>
+
+  <div class="name-card" style="border-left: 4px solid var(--grey);">
+    <span class="name-tier tier-silver">Modern Coined</span>
+    <h3>ORA</h3>
+    <div class="phonetic">/OH-rah/ · ओरा</div>
+    <div class="meaning">Latin: mouth, to speak, to pray. Also evokes "oro" (gold in Italian/Spanish). Three letters. Pure and elemental.</div>
+    <p><strong>Why it works:</strong> ORA is the minimalist's choice. Three letters. Two phonemes. Impossible to shorten because it is already as short as a brand name can be. The Latin meaning "mouth" is literally where a sweetener goes — the name and the product use-case are one. "Ora" also sounds like the beginning of "orange" (warmth) and "origin" (roots). On a gold jar, "ORA" in large serif type with enormous whitespace around it is a Dieter Rams-level design statement. It says: we are so confident in our product that we don't need a long name to explain it. The name works identically in English, Hindi, Telugu, Tamil — no translation needed.</p>
+    <p><strong>Tagline pairing:</strong> "ORA — Say Yes To Sweet." / "ORA — Pure, Golden, Prebiotic."</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">9.5</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">7.5</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">7.0</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">7.0</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Shelf</div></div>
+    </div>
+  </div>
+
+  <!-- TIER 3: BOLD DIRECTIONS -->
+  <h3 style="margin-top:40px; font-size:18px;"><span class="name-tier tier-bronze">Tier 3 — Bold Directions</span></h3>
+  <p style="color:var(--grey); margin-bottom:20px;">These names take bigger creative swings. Higher risk, higher reward.</p>
+
+  <div class="name-card" style="border-left: 4px solid #C1440E;">
+    <span class="name-tier tier-bronze">Challenger</span>
+    <h3>KANAKA</h3>
+    <div class="phonetic">/kah-NAH-kah/ · कनक</div>
+    <div class="meaning">Sanskrit/Hindi: gold, wheat, radiance. In South Indian languages, Kanaka directly means gold. The Kanakadasa connection adds heritage weight.</div>
+    <p><strong>Why it works:</strong> KANAKA is unapologetically Indian and unapologetically premium. While other health brands chase Western-sounding names, KANAKA claims deep Sanskrit heritage — "gold" in its oldest form. Three syllables is longer than ideal, but the rhythmic ka-na-ka has a musical quality that makes it memorable. In Karnataka and Andhra Pradesh (Hyderabad is home base), "Kanaka" is immediately understood as gold. The name doubles as a subtle nod to Kanakadasa — the 16th century poet-saint — giving it cultural depth that resonates with educated Indian consumers.</p>
+    <p><strong>Risk:</strong> Three syllables. May feel too Sanskritic for younger, metro consumers. Regional recognition is strong in South India but weaker in North.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">7.0</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">9.5</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">7.5</div><div class="score-lbl">Shelf</div></div>
+    </div>
+  </div>
+
+  <div class="name-card" style="border-left: 4px solid #C1440E;">
+    <span class="name-tier tier-bronze">Provocative</span>
+    <h3>HIVE</h3>
+    <div class="phonetic">/hyve/ · हाइव</div>
+    <div class="meaning">Where honey comes from. Nature's original sweet factory. Community, nature, golden warmth.</div>
+    <p><strong>Why it works:</strong> HIVE connects to honey (nature's gold standard for sweetness) without being literal. It evokes the beehive — a symbol of natural productivity, community, and golden warmth. The hexagonal jar design already mirrors honeycomb geometry, so the name and packaging reinforce each other at a structural level. Four letters. One syllable. HIVE also carries a modern tech connotation ("the hive" = collaborative, buzzy, energetic), which appeals to younger urban consumers. "Switch to Hive" is a compelling verb-form campaign.</p>
+    <p><strong>Tagline pairing:</strong> "HIVE — Nature's Sweet Intelligence." / "HIVE — From Roots To Your Cup."</p>
+    <p><strong>Risk:</strong> Could be confused with actual honey products. The tech/crypto "Hive" associations might muddy positioning for some.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">6.5</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">6.5</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">7.0</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Shelf</div></div>
+    </div>
+  </div>
+
+  <div class="name-card" style="border-left: 4px solid #C1440E;">
+    <span class="name-tier tier-bronze">Origin Story</span>
+    <h3>ROOT</h3>
+    <div class="phonetic">/root/ · रूट</div>
+    <div class="meaning">Where FOS literally comes from — chicory root. Also: the root of good health, getting to the root of the problem (sugar), rooted in nature.</div>
+    <p><strong>Why it works:</strong> ROOT is the ingredient-as-brand play. Like "Monk Fruit" or "Oat Milk" — the name educates and differentiates in a single word. "Where does your sweetener come from?" "A root." It is grounded, earthy, natural, and anti-chemical in one syllable. The minimalism is radical: ROOT on a gold jar. Nothing more needed. As the category creator for FOS sweeteners, owning the word "Root" means every future competitor has to define themselves against you.</p>
+    <p><strong>Risk:</strong> Might feel too earthy/health-food-store for mainstream. "Root" has associations with root canal, root cause — not all positive. Generic word = harder to trademark exclusively. Works better as a premium metro brand than a mass-market play.</p>
+    <div class="scores">
+      <div class="score-item"><div class="score-val">8.5</div><div class="score-lbl">Memorability</div></div>
+      <div class="score-item"><div class="score-val">9.0</div><div class="score-lbl">Meaning</div></div>
+      <div class="score-item"><div class="score-val">7.0</div><div class="score-lbl">Bilingual</div></div>
+      <div class="score-item"><div class="score-val">5.5</div><div class="score-lbl">Domain</div></div>
+      <div class="score-item"><div class="score-val">5.0</div><div class="score-lbl">Trademark</div></div>
+      <div class="score-item"><div class="score-val">8.0</div><div class="score-lbl">Shelf</div></div>
     </div>
   </div>
 
   <div class="callout">
     <div class="icon">&#9670;</div>
-    <div class="text"><strong>Note:</strong> Brand name is currently TBD — to be finalized through the structured naming process above during Engine A Week 1–3. All documents in this suite use [Brand Name] as placeholder until the name is locked.</div>
+    <div class="text"><strong>Inspire Labs Recommendation:</strong> AURAA is our top pick. It is the only name where the word, the color, the packaging, and the cultural meaning all converge on a single idea — gold. Trademark risk is moderate-low for a coined word. SOLRA is the safest alternative (coined = strongest TM). NOOR is the most emotionally powerful but carries higher trademark risk. Final selection requires: (1) TM search on top 3 — ₹45K, 5-day turnaround; (2) Domain availability check — same day; (3) Consumer pulse test — 200 respondents, ₹1.2L, 4 days.</div>
   </div>
 </section>
 
-<!-- ══ SECTION 3: BRAND IDENTITY ══ -->
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 3: BRAND IDENTITY & DESIGN        -->
+<!-- ══════════════════════════════════════════ -->
 <section id="identity">
   <div class="section-label">03 · Brand Identity</div>
-  <div class="section-title">What the Brand Will Look & Feel Like</div>
-  <div class="section-desc">Regardless of which name is chosen, the visual identity system will be built around these strategic pillars. Below is the creative direction for Revelations to review.</div>
+  <div class="section-title">Design System</div>
+  <div class="section-desc">The consumer brand identity is distinct from the Inspire Labs corporate identity. Inspire Labs uses Hanken Grotesk, Ink (#0E0F0A), and orange (#FF7A45) as active-state accent. The consumer sweetener brand uses a warm gold palette designed for shelf impact and food-category trust. Both systems share the principle of restraint — no decorative clutter, every element earns its space.</div>
 
-  <!-- POSITIONING -->
-  <div class="warm-panel">
-    <h3>Brand Positioning</h3>
-    <table>
-      <thead><tr><th>Element</th><th>Direction</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Category</strong></td><td>Prebiotic Sugar Replacer (new sub-category within sweeteners)</td></tr>
-        <tr><td><strong>Tagline</strong></td><td>"Same Taste, Smarter Sugar" — positions as an upgrade, not a sacrifice</td></tr>
-        <tr><td><strong>Core Promise</strong></td><td>The only sweetener that tastes like sugar AND feeds your gut</td></tr>
-        <tr><td><strong>Target</strong></td><td>Health-conscious urban Indians, 25-55, who want to reduce sugar but hate artificial alternatives</td></tr>
-        <tr><td><strong>Tone</strong></td><td>Confident, warm, science-backed but not clinical. Think "smart friend who cooks" — not "doctor's prescription"</td></tr>
-        <tr><td><strong>Competitor Frame</strong></td><td>Not competing with sugar (₹40/kg). Competing with Sugar Free (chemical fear), stevia (bitter aftertaste), and Tata NQ (overpriced, no prebiotic benefit)</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <h3 style="font-size:18px; font-weight:700; margin:24px 0 12px;">Inspire Labs Corporate vs. Consumer Brand</h3>
+  <table>
+    <thead><tr><th>Element</th><th>Inspire Labs (Corporate)</th><th>Consumer Sweetener Brand</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Primary Font</strong></td><td>Hanken Grotesk 400/500/700/800</td><td>Playfair Display 500/600/700/800 (serif)</td></tr>
+      <tr><td><strong>Body Font</strong></td><td>Hanken Grotesk 400</td><td>Inter 400/500/600</td></tr>
+      <tr><td><strong>Data Font</strong></td><td>JetBrains Mono 400/500/600</td><td>JetBrains Mono 400/500/700 (shared)</td></tr>
+      <tr><td><strong>Primary Color</strong></td><td>Ink #0E0F0A</td><td>Primary Gold #D4A017 (Pantone 7405 C)</td></tr>
+      <tr><td><strong>Accent</strong></td><td>Active Orange #FF7A45 (active states only)</td><td>Deep Amber #8B6914 (Pantone 7556 C)</td></tr>
+      <tr><td><strong>Background</strong></td><td>White #FFFFFF / Warm #FAF7F1</td><td>Cream White #FFF8E7 (Pantone 7499 C)</td></tr>
+      <tr><td><strong>Text</strong></td><td>Ink #0E0F0A / Grey #6F7583</td><td>Charcoal #1A1A2E (Pantone Black 6 C)</td></tr>
+      <tr><td><strong>Functional Green</strong></td><td>—</td><td>Nature Green #2D5016 (Pantone 364 C) — accent only, 5-10%</td></tr>
+      <tr><td><strong>Principle</strong></td><td>Orange = active state only, never decorative</td><td>Gold = brand identity, cream = readability, green = health accent only</td></tr>
+    </tbody>
+  </table>
 
   <!-- COLOR PALETTE -->
-  <h3 style="font-size:18px; font-weight:700; margin:32px 0 12px;">Proposed Color System</h3>
-  <p style="color:var(--grey); margin-bottom:20px;">Warm, natural tones that signal "real food" — not clinical or pharmaceutical. Gold as the signature brand color (premium, honey-like warmth). Green as the functional anchor (gut health, natural origin).</p>
-
+  <h3 style="font-size:18px; font-weight:700; margin:32px 0 12px;">Consumer Brand Color System</h3>
   <div class="color-swatches">
     <div class="swatch">
       <div class="color-circle" style="background:#D4A017;"></div>
-      <div class="color-name">Honey Gold</div>
-      <div class="color-hex">#D4A017</div>
-      <div class="color-hex">Primary · Premium</div>
+      <div class="color-name">Primary Gold</div>
+      <div class="color-hex">#D4A017 · Pantone 7405 C</div>
+      <div class="color-hex">CMYK 0/24/89/17</div>
     </div>
     <div class="swatch">
-      <div class="color-circle" style="background:#2D6A4F;"></div>
-      <div class="color-name">Prebiotic Green</div>
-      <div class="color-hex">#2D6A4F</div>
-      <div class="color-hex">Gut Health · Trust</div>
+      <div class="color-circle" style="background:#8B6914;"></div>
+      <div class="color-name">Deep Amber</div>
+      <div class="color-hex">#8B6914 · Pantone 7556 C</div>
+      <div class="color-hex">CMYK 0/25/85/45</div>
     </div>
     <div class="swatch">
-      <div class="color-circle" style="background:#FAF3E0;"></div>
-      <div class="color-name">Warm Cream</div>
-      <div class="color-hex">#FAF3E0</div>
-      <div class="color-hex">Background · Natural</div>
+      <div class="color-circle" style="background:#2D5016;"></div>
+      <div class="color-name">Nature Green</div>
+      <div class="color-hex">#2D5016 · Pantone 364 C</div>
+      <div class="color-hex">CMYK 73/12/100/43</div>
+    </div>
+    <div class="swatch">
+      <div class="color-circle" style="background:#FFF8E7;"></div>
+      <div class="color-name">Cream White</div>
+      <div class="color-hex">#FFF8E7 · Pantone 7499 C</div>
+      <div class="color-hex">CMYK 0/2/10/0</div>
     </div>
     <div class="swatch">
       <div class="color-circle" style="background:#1A1A2E;"></div>
-      <div class="color-name">Deep Ink</div>
-      <div class="color-hex">#1A1A2E</div>
-      <div class="color-hex">Text · Headlines</div>
-    </div>
-    <div class="swatch">
-      <div class="color-circle" style="background:#E8E0D2;"></div>
-      <div class="color-name">Oat</div>
-      <div class="color-hex">#E8E0D2</div>
-      <div class="color-hex">Accent · Borders</div>
-    </div>
-    <div class="swatch">
-      <div class="color-circle" style="background:#C1440E;"></div>
-      <div class="color-name">Warm Spice</div>
-      <div class="color-hex">#C1440E</div>
-      <div class="color-hex">CTA · Urgency</div>
+      <div class="color-name">Charcoal</div>
+      <div class="color-hex">#1A1A2E · Pantone Black 6 C</div>
+      <div class="color-hex">CMYK 84/74/42/50</div>
     </div>
   </div>
 
-  <!-- TYPOGRAPHY -->
-  <h3 style="font-size:18px; font-weight:700; margin:32px 0 12px;">Typography Direction</h3>
-  <div class="card-grid">
-    <div class="card">
-      <div class="rank">Headlines</div>
-      <h3 style="font-family:'Playfair Display',serif; font-size:26px;">Playfair Display</h3>
-      <p>Serif. Elegant, editorial, premium. Signals heritage and credibility. Used for headlines, hero sections, and packaging feature text. Communicates "this is not a cheap substitute."</p>
-    </div>
-    <div class="card">
-      <div class="rank">Body & UI</div>
-      <h3 style="font-family:'Inter',sans-serif; font-size:26px;">Inter</h3>
-      <p>Clean sans-serif. Optimized for screens. Used for body text, product descriptions, website UI, and all digital surfaces. Highly readable at small sizes — critical for nutritional info and packaging fine print.</p>
-    </div>
-    <div class="card">
-      <div class="rank">Data & Labels</div>
-      <h3 style="font-family:'JetBrains Mono',monospace; font-size:22px;">JetBrains Mono</h3>
-      <p>Monospace. For nutritional data, lab results, clinical numbers, and metadata. Signals scientific precision and transparency. "We show the numbers because we're proud of them."</p>
-    </div>
+  <div class="callout">
+    <div class="icon">&#9670;</div>
+    <div class="text"><strong>Why gold owns the shelf:</strong> Every competitor clusters in green (Sugar Free, stevia), blue (Equal), or white (clinical). Zero brands own gold in the Indian sweetener aisle. Gold in Indian culture = Lakshmi, prosperity, purity. The specific shade #D4A017 mirrors natural honey and jaggery — instant "natural sweetener" association. Against competitors, gold creates maximum visual contrast in the 4-second shelf decision window.</div>
   </div>
-
-  <!-- PACKAGING DIRECTION -->
-  <h3 style="font-size:18px; font-weight:700; margin:32px 0 12px;">Packaging Direction</h3>
-  <div class="warm-panel">
-    <table>
-      <thead><tr><th>Element</th><th>Direction</th><th>Rationale</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Material — Hero SKU</strong></td><td>Clear glass jar with gold lid, matte cream label</td><td>Premium, kitchen-counter worthy. "I'd leave this out, not hide it." Competes visually with artisanal honey, not pharmacy sweeteners.</td></tr>
-        <tr><td><strong>Material — Range</strong></td><td>Frosted HDPE jars (250g, 450g), kraft-look pouches (1kg)</td><td>Balance premium feel with functional packaging. Frosted finish = clean. Kraft pouch = bulk value + eco signal.</td></tr>
-        <tr><td><strong>Front Panel Hierarchy</strong></td><td>1. Brand name (largest) → 2. "Prebiotic Sugar Replacer" → 3. Key claim badge → 4. Net weight</td><td>FSSAI compliant. Brand-first, category-second. Claim badge draws eye to differentiation.</td></tr>
-        <tr><td><strong>Signature Element</strong></td><td>Gold foil accent strip on every SKU</td><td>Consistent across range. Premium signifier. Visible at shelf distance. Connects glass hero to HDPE jars visually.</td></tr>
-        <tr><td><strong>Illustration Style</strong></td><td>Minimalist line art — gut/intestine motif, botanicals, molecular structure</td><td>Subtle science-meets-nature visual language. Not cartoonish. Not clinical. The "sweet spot" between a wellness brand and a food brand.</td></tr>
-        <tr><td><strong>Back Panel</strong></td><td>"Why sc-FOS?" explainer, usage guide, QR to recipe library</td><td>Educates at point of purchase. QR drives to owned digital. Recipe angle = repeat usage.</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- SKU LINEUP -->
-  <h3 style="font-size:18px; font-weight:700; margin:32px 0 12px;">Launch SKU Lineup</h3>
-  <table>
-    <thead><tr><th>SKU</th><th>Format</th><th>MRP</th><th>Role</th></tr></thead>
-    <tbody>
-      <tr><td><strong>100g Glass Jar</strong></td><td>Clear glass, gold lid</td><td class="num">₹249</td><td>Hero / trial. Gift-worthy. Instagram-first.</td></tr>
-      <tr><td><strong>250g HDPE Jar</strong></td><td>Frosted white, screw cap</td><td class="num">₹499</td><td>Core everyday. Kitchen staple. Highest volume.</td></tr>
-      <tr><td><strong>450g HDPE Jar</strong></td><td>Frosted white, screw cap</td><td class="num">₹799</td><td>Value size. Repeat buyers. Subscription anchor.</td></tr>
-      <tr><td><strong>30-Sachet Box</strong></td><td>Individual 4g sachets</td><td class="num">₹299</td><td>On-the-go. Office. Travel. Sampling vehicle.</td></tr>
-      <tr><td><strong>1kg Stand-Up Pouch</strong></td><td>Kraft-look, resealable</td><td class="num">₹1,399</td><td>Bulk/family size. Best per-gram value.</td></tr>
-      <tr><td><strong>10ml Liquid Drops</strong></td><td>Dropper bottle</td><td class="num">₹349</td><td>Innovation SKU. Month 5 launch. Beverages.</td></tr>
-    </tbody>
-  </table>
 </section>
 
-<!-- ══ SECTION 4: INITIAL COSTS ══ -->
-<section id="costs">
-  <div class="section-label">04 · Initial Investment</div>
-  <div class="section-title">What It Costs to Launch</div>
-  <div class="section-desc">This is Engine A — the brand foundation. Everything needed to go from zero to a live, shippable brand. This is not the full GTM budget; this is the cost to exist as a brand people can buy.</div>
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 4: PACKAGING DESIGN               -->
+<!-- ══════════════════════════════════════════ -->
+<section id="packaging">
+  <div class="section-label">04 · Packaging Design</div>
+  <div class="section-title">Every Bottle, Every Spec</div>
+  <div class="section-desc">Complete production-ready specifications for all 6 SKUs. A qualified packaging vendor should be able to produce packaging from these specs alone. Full details including die-lines, label zones, and FSSAI panel layouts are in the <a href="packaging-design.html">Packaging Design Bible</a>.</div>
 
   <div class="stat-row">
     <div class="stat-box">
-      <div class="value">₹1.40<span>Cr</span></div>
-      <div class="label">Total Engine A Investment</div>
+      <div class="value">6</div>
+      <div class="label">SKU Formats</div>
     </div>
     <div class="stat-box">
-      <div class="value">8</div>
-      <div class="label">Workstreams</div>
+      <div class="value">₹10<span>-22</span></div>
+      <div class="label">Packaging Cost Per Unit Range</div>
     </div>
     <div class="stat-box">
-      <div class="value">90<span> Days</span></div>
-      <div class="label">To Launch-Ready</div>
+      <div class="value">Hexagonal</div>
+      <div class="label">Hero Jar Shape (No Competitor Uses This)</div>
     </div>
   </div>
 
-  <!-- COST BREAKDOWN TABLE -->
-  <table>
-    <thead>
-      <tr><th>Workstream</th><th>Scope</th><th style="text-align:right">Cost</th><th style="text-align:right">Timeline</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>A1. Brand Strategy & Research</strong></td>
-        <td>Discovery workshop, competitive deep-dive, 500-person consumer survey, 4 focus groups, 6 personas, pricing strategy (Van Westendorp), brand strategy bible (40 pages)</td>
-        <td class="num">₹20L</td>
-        <td class="num">Week 1–8</td>
-      </tr>
-      <tr>
-        <td><strong>A2. Naming & Trademark</strong></td>
-        <td>TM comprehensive search (India Class 30 + Class 5, US via Madrid Protocol), TM filings, domain acquisition (.com, .in, .co.in, .health), social handle reservation, 12-month attorney retainer</td>
-        <td class="num">₹6L</td>
-        <td class="num">Week 1–3</td>
-      </tr>
-      <tr>
-        <td><strong>A3. Visual Identity System</strong></td>
-        <td>Logo design (3 concepts → 1 final, 8 variations), 12-color system (Pantone/CMYK/RGB/HEX, WCAG AA), typography system, 40 custom icons (SVG, 2 weights), 6 brand patterns, 80-page brand guidelines PDF</td>
-        <td class="num">₹18L</td>
-        <td class="num">Week 3–10</td>
-      </tr>
-      <tr>
-        <td><strong>A4. Packaging Design (6 SKUs)</strong></td>
-        <td>Structural design, label design, print-ready files, FSSAI panels — all 6 SKUs. Plus shipper carton, 3D mockups (30 renders), print vendor sourcing, material testing, FMCG packaging consultant (3-month)</td>
-        <td class="num">₹30L</td>
-        <td class="num">Week 4–12</td>
-      </tr>
-      <tr>
-        <td><strong>A5. Photography & Video</strong></td>
-        <td>Product shots (6 SKUs × 10 angles), 15 styled setups, 10 recipe shoots, 4 lifestyle sessions with models, 60s brand film, 3 explainer videos (30s each), 20 social clips (15s vertical), full post-production</td>
-        <td class="num">₹22L</td>
-        <td class="num">Week 8–14</td>
-      </tr>
-      <tr>
-        <td><strong>A6. Brand Collateral</strong></td>
-        <td>Investor pitch deck (25 slides), product sell sheets (6 SKUs), trade presentation, doctor detailing kit, recipe booklet, sampling kits</td>
-        <td class="num">₹8L</td>
-        <td class="num">Week 10–14</td>
-      </tr>
-      <tr>
-        <td><strong>A7. First Inventory Run</strong></td>
-        <td>10,000 units across 5 SKUs (liquid drops deferred). Packaging materials, sc-FOS raw material, contract manufacturing, QC testing (3 labs), 3PL warehouse setup (Hyderabad)</td>
-        <td class="num">₹30L</td>
-        <td class="num">Week 10–14</td>
-      </tr>
-      <tr>
-        <td><strong>A8. Contingency</strong></td>
-        <td>Unallocated buffer for scope changes, additional research rounds, regulatory surprises, or design iterations beyond contracted revisions</td>
-        <td class="num">₹6L</td>
-        <td class="num">—</td>
-      </tr>
-      <tr class="total-row">
-        <td colspan="2"><strong>Total Initial Investment (Engine A)</strong></td>
-        <td class="num">₹1.40Cr</td>
-        <td class="num">~14 Weeks</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="callout">
-    <div class="icon">&#9670;</div>
-    <div class="text"><strong>What this gets you:</strong> A complete, launch-ready brand — name protected, identity designed, packaging print-ready, product photographed, first batch manufactured, and warehouse stocked. At the end of Engine A, you can take an order and ship a box.</div>
+  <!-- SKU 1: 100g Glass -->
+  <div class="card" style="border-top: 3px solid #D4A017;">
+    <div class="rank" style="color:#D4A017;">Hero SKU — Trial/Gift</div>
+    <h3>100g Hexagonal Glass Jar · MRP ₹249</h3>
+    <p style="margin-bottom:16px;">The most distinctive physical object in the Indian sweetener market. Hexagonal clear borosilicate glass with a bamboo cap. The gold FOS powder is visible through the glass, making the product itself part of the brand identity.</p>
+    <div class="spec-grid">
+      <div class="spec-panel">
+        <h4 style="color:#D4A017;">Physical Dimensions</h4>
+        <div class="spec-row-sm"><span class="lbl">Shape</span><span class="val">Hexagonal prism (6-sided)</span></div>
+        <div class="spec-row-sm"><span class="lbl">Cross-section</span><span class="val">65mm across flats</span></div>
+        <div class="spec-row-sm"><span class="lbl">Height (body)</span><span class="val">85mm incl. neck</span></div>
+        <div class="spec-row-sm"><span class="lbl">Height (with cap)</span><span class="val">98mm total</span></div>
+        <div class="spec-row-sm"><span class="lbl">Glass</span><span class="val">Borosilicate Type I, clear/flint</span></div>
+        <div class="spec-row-sm"><span class="lbl">Wall thickness</span><span class="val">3.0mm minimum</span></div>
+        <div class="spec-row-sm"><span class="lbl">Mouth</span><span class="val">48mm wide-mouth, CT 48-400</span></div>
+        <div class="spec-row-sm"><span class="lbl">Weight empty</span><span class="val">120g ±5g</span></div>
+        <div class="spec-row-sm"><span class="lbl">Volume</span><span class="val">180ml (fills ~60%)</span></div>
+      </div>
+      <div class="spec-panel">
+        <h4 style="color:#D4A017;">Cap & Label</h4>
+        <div class="spec-row-sm"><span class="lbl">Cap material</span><span class="val">Bamboo composite + PP liner</span></div>
+        <div class="spec-row-sm"><span class="lbl">Cap diameter</span><span class="val">58mm, 13mm height</span></div>
+        <div class="spec-row-sm"><span class="lbl">Cap finish</span><span class="val">Natural bamboo, food-safe lacquer</span></div>
+        <div class="spec-row-sm"><span class="lbl">Cap emboss</span><span class="val">Brand monogram debossed on top</span></div>
+        <div class="spec-row-sm"><span class="lbl">Label</span><span class="val">Wrap-around, 180°, matte PP 80gsm</span></div>
+        <div class="spec-row-sm"><span class="lbl">Label size</span><span class="val">120mm × 60mm, 3mm radius corners</span></div>
+        <div class="spec-row-sm"><span class="lbl">Finish</span><span class="val">Matte lam + spot UV on logo/gold</span></div>
+        <div class="spec-row-sm"><span class="lbl">Tamper</span><span class="val">PVC shrink band, 25mm</span></div>
+        <div class="spec-row-sm" style="font-weight:700; color:#D4A017;"><span class="lbl">Unit cost</span><span class="val">₹18-22</span></div>
+      </div>
+    </div>
   </div>
 
-  <!-- WHAT'S NOT INCLUDED -->
-  <div class="warm-panel">
-    <h3>What's Not Included (Comes Later)</h3>
+  <!-- SKU 2: 250g HDPE -->
+  <div class="card" style="border-top: 3px solid #D4A017;">
+    <div class="rank" style="color:#D4A017;">Volume Driver — 60% of Projected Sales</div>
+    <h3>250g HDPE Jar · MRP ₹499</h3>
+    <p style="margin-bottom:16px;">Tapered cylinder with grip ridges and gold-tinted flip-top cap. Full 360° gold shrink sleeve — the jar IS the brand at shelf level. Induction-sealed with silicone gasket for moisture protection (WVTR &lt; 0.5 g/m²/day).</p>
+    <div class="spec-grid">
+      <div class="spec-panel">
+        <h4 style="color:#D4A017;">Physical Dimensions</h4>
+        <div class="spec-row-sm"><span class="lbl">Base diameter</span><span class="val">75mm (tapers to 70mm shoulder)</span></div>
+        <div class="spec-row-sm"><span class="lbl">Height</span><span class="val">130mm body, 145mm with cap</span></div>
+        <div class="spec-row-sm"><span class="lbl">Material</span><span class="val">HDPE, BPA-free, 1.5mm wall</span></div>
+        <div class="spec-row-sm"><span class="lbl">Mouth</span><span class="val">53mm, flip-top + induction seal</span></div>
+        <div class="spec-row-sm"><span class="lbl">Grip zone</span><span class="val">4 ridges at 40-60% height</span></div>
+        <div class="spec-row-sm"><span class="lbl">Empty weight</span><span class="val">45g ±3g</span></div>
+      </div>
+      <div class="spec-panel">
+        <h4 style="color:#D4A017;">Sleeve & Cost</h4>
+        <div class="spec-row-sm"><span class="lbl">Sleeve</span><span class="val">PET-G, 50μ, 360° coverage</span></div>
+        <div class="spec-row-sm"><span class="lbl">Print</span><span class="val">Rotogravure, 8 colors incl. PMS 7405C</span></div>
+        <div class="spec-row-sm"><span class="lbl">Flat width</span><span class="val">236mm</span></div>
+        <div class="spec-row-sm"><span class="lbl">Shrink tunnel</span><span class="val">90-95°C, 3-sec dwell</span></div>
+        <div class="spec-row-sm"><span class="lbl">Cap</span><span class="val">PP, gold-tinted (7405C + 10% white)</span></div>
+        <div class="spec-row-sm" style="font-weight:700; color:#D4A017;"><span class="lbl">Unit cost</span><span class="val">₹12-15 (5.5-6.9% of MRP)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remaining SKUs summary -->
+  <div class="card">
+    <div class="card-title">Remaining SKU Summary</div>
     <table>
-      <thead><tr><th>Phase</th><th>What It Covers</th><th style="text-align:right">Est. Budget</th></tr></thead>
+      <thead><tr><th>SKU</th><th>Format</th><th>MRP</th><th>Key Material Spec</th><th>Unit Cost</th></tr></thead>
       <tbody>
-        <tr><td><strong>Engine B — Digital & Performance</strong></td><td>Shopify website, SEO, Meta/Google ads, Amazon listing, agency fees, CRO</td><td class="num">₹4.10Cr</td></tr>
-        <tr><td><strong>Engine C — Retention & Growth</strong></td><td>Influencer campaigns, email/WhatsApp automation, PR, sampling, subscriptions</td><td class="num">₹1.85Cr</td></tr>
-        <tr><td><strong>Operations</strong></td><td>Team hiring, tech stack, 3PL scaling, legal</td><td class="num">₹0.95Cr</td></tr>
-        <tr><td><strong>Working Capital</strong></td><td>Inventory replenishment, cash flow buffer</td><td class="num">₹1.20Cr</td></tr>
-        <tr class="total-row"><td colspan="2"><strong>Remaining (Post-Launch)</strong></td><td class="num">₹8.10Cr</td></tr>
+        <tr><td><strong>450g HDPE Jar</strong></td><td>Tapered cylinder, same design as 250g scaled up</td><td class="num">₹799</td><td>90mm base, 155mm height, 1.8mm wall. Green "BEST VALUE" band on sleeve. Includes 5g gold measuring scoop.</td><td class="num">₹15-18</td></tr>
+        <tr><td><strong>30-Sachet Box</strong></td><td>5g pillow pouches in carton box</td><td class="num">₹299</td><td>Sachets: PET(12μ)/AL(7μ)/PE(50μ), 80×120mm. Box: 300gsm FBB, matte lam + spot UV. Offset, CMYK + PMS 7405.</td><td class="num">₹30-36</td></tr>
+        <tr><td><strong>1kg Stand-Up Pouch</strong></td><td>Kraft-front pouch, clear back window</td><td class="num">₹1,399</td><td>200×300×80mm. Kraft/PET/AL/LLDPE laminate. Reclosable slider zipper. K-seal gusset. Flexo 6-color on kraft.</td><td class="num">₹15-18</td></tr>
+        <tr><td><strong>10ml Liquid Drops</strong></td><td>Amber PET dropper bottle</td><td class="num">₹349</td><td>30mm × 90mm. Glass pipette dropper. 0.05ml/drop calibrated. Child-safe push-turn gold PP cap. Month 5 launch.</td><td class="num">₹10-12</td></tr>
       </tbody>
     </table>
-    <p style="font-size:13px; color:var(--grey); margin-top:12px;">Full execution plan for Engines B + C available as a separate document once brand foundation decisions are made.</p>
-  </div>
-</section>
-
-<!-- ══ SECTION 5: TIMELINE ══ -->
-<section id="timeline">
-  <div class="section-label">05 · Timeline</div>
-  <div class="section-title">Engine A — 14-Week Roadmap</div>
-  <div class="section-desc">From signing to first shippable product. Workstreams overlap where possible to compress timeline.</div>
-
-  <table>
-    <thead>
-      <tr><th>Week</th><th>Milestone</th><th>Workstreams Active</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="num">1</td><td><strong>Kick-off.</strong> Discovery workshop with Revelations leadership (8 stakeholders, 2 days). Begin TM search. Begin competitive deep-dive.</td><td>A1, A2</td></tr>
-      <tr><td class="num">2–3</td><td><strong>Research.</strong> Consumer survey fielded (500 respondents, 4 metros). TM results received. Domain acquisition begins. Focus groups scheduled.</td><td>A1, A2</td></tr>
-      <tr><td class="num">3–4</td><td><strong>Name locked.</strong> TM cleared. Domains secured. Social handles reserved. Logo design begins (3 concepts).</td><td>A2, A3</td></tr>
-      <tr><td class="num">5–6</td><td><strong>Identity.</strong> Color system, typography, icon set in progress. Focus groups completed. Personas finalized. Brand strategy bible drafted.</td><td>A1, A3</td></tr>
-      <tr><td class="num">7–8</td><td><strong>Strategy sign-off.</strong> Brand strategy bible approved. Pricing strategy finalized (Van Westendorp). Logo finalized. Packaging design begins.</td><td>A1, A3, A4</td></tr>
-      <tr><td class="num">8–10</td><td><strong>Design system complete.</strong> 80-page brand guidelines delivered. All 6 SKU packaging designs in progress. Print vendors shortlisted. Photography planning.</td><td>A3, A4</td></tr>
-      <tr><td class="num">10–12</td><td><strong>Production.</strong> Packaging print-ready files delivered. Material testing complete. Contract manufacturer engaged. Photography and video shoots.</td><td>A4, A5, A6, A7</td></tr>
-      <tr><td class="num">12–14</td><td><strong>Launch-ready.</strong> Brand film delivered. First 10,000 units manufactured and QC'd. 3PL warehouse stocked. All collateral ready. Brand is live.</td><td>A5, A6, A7</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<!-- ══ SECTION 6: NEXT STEPS ══ -->
-<section id="next">
-  <div class="section-label">06 · Next Steps</div>
-  <div class="section-title">Three Decisions Needed</div>
-  <div class="section-desc">Once these are resolved, Inspire Labs can begin Engine A execution within 5 business days.</div>
-
-  <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
-    <div class="card" style="border-top: 3px solid var(--orange);">
-      <div class="rank">Decision 1</div>
-      <h3>Brand Name</h3>
-      <p>Approve the 3-phase naming process (Discovery → Research → Lock). Inspire Labs runs the full naming sprint in Week 1–3 of Engine A — workshop, consumer testing, TM search, domain acquisition, and final selection.</p>
-    </div>
-    <div class="card" style="border-top: 3px solid var(--orange);">
-      <div class="rank">Decision 2</div>
-      <h3>Identity Direction</h3>
-      <p>Approve or refine the visual direction — color palette, typography, packaging concept. This becomes the brief for the design team. Refinements are expected; this is a starting point, not a final.</p>
-    </div>
-    <div class="card" style="border-top: 3px solid var(--orange);">
-      <div class="rank">Decision 3</div>
-      <h3>Engine A Go/No-Go</h3>
-      <p>Approve the ₹1.40Cr initial investment to begin brand foundation. Capital deployment: ₹40L at signing, ₹50L at Week 4 (design phase), ₹50L at Week 10 (production phase).</p>
-    </div>
   </div>
 
   <div class="callout">
     <div class="icon">&#9670;</div>
-    <div class="text"><strong>Inspire Labs Commitment:</strong> Our team (Account Director, Brand Strategist, Performance Marketer, Content Lead, Design Lead, Tech Lead) is deployed full-time on this project. Team cost (~₹63L annually) is absorbed by Inspire Labs as sweat equity — not charged to the project budget.</div>
+    <div class="text"><strong>Packaging as education vehicle:</strong> 90% of Indian consumers have never heard of FOS. Every surface of every SKU answers five questions without external context: (1) What is this? → "Prebiotic Sweetener" on front. (2) How is it different? → Side panel comparison vs synthetic sweeteners. (3) Is it safe/natural? → FSSAI badge, "100% Plant-Based," certifications. (4) How do I use it? → Teaspoon equivalents, heat-stable to 140°C. (5) What is FOS? → "The FOS Story" back panel + QR to science page. Full label zone hierarchy and FSSAI panel specifications are in the <a href="packaging-design.html">Packaging Design Bible</a>.</div>
   </div>
 </section>
 
-<!-- ══ SECTION 7: MARKET CONTEXT ══ -->
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 5: ₹10 CRORE BUDGET               -->
+<!-- ══════════════════════════════════════════ -->
+<section id="budget">
+  <div class="section-label">05 · The ₹10Cr Plan</div>
+  <div class="section-title">Complete At-Cost Investment Breakdown</div>
+  <div class="section-desc">Total investment: ₹10.00 Crore across 12 months. Split into three engines: Engine A (brand foundation, ₹1.40Cr, Months 1-3), Engine B (digital launch + growth, ₹4.85Cr, Months 3-9), Engine C (scale + retention, ₹3.75Cr, Months 7-12). Every line item is at-cost — Inspire Labs team cost (~₹63L/yr) is absorbed as sweat equity. Below is the spend broken down to vendor-level detail.</div>
+
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="value">₹10.00<span>Cr</span></div>
+      <div class="label">Total Investment</div>
+    </div>
+    <div class="stat-box">
+      <div class="value">₹1.40<span>Cr</span></div>
+      <div class="label">Engine A · Brand Foundation</div>
+    </div>
+    <div class="stat-box">
+      <div class="value">₹4.85<span>Cr</span></div>
+      <div class="label">Engine B · Launch & Growth</div>
+    </div>
+    <div class="stat-box">
+      <div class="value">₹3.75<span>Cr</span></div>
+      <div class="label">Engine C · Scale & Retention</div>
+    </div>
+  </div>
+
+  <!-- ENGINE A -->
+  <div class="budget-phase" style="border-left: 4px solid #D4A017;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap;">
+      <div>
+        <h3 style="color:#D4A017;">Engine A — Brand Foundation</h3>
+        <div class="phase-period">Month 1 → Month 3 (14 weeks)</div>
+      </div>
+      <div class="phase-total" style="color:#D4A017;">₹1,40,00,000</div>
+    </div>
+    <p style="margin:12px 0 0; color:var(--ink-70);">Everything needed to go from zero to a live, shippable brand. Capital deployment: ₹40L at signing, ₹50L at Week 4, ₹50L at Week 10.</p>
+
+    <table class="line-item-table">
+      <thead><tr><th>Line Item</th><th>Detail</th><th style="text-align:right;">Cost</th><th style="text-align:right;">Timing</th></tr></thead>
+      <tbody>
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A1. Brand Strategy & Research — ₹20,00,000</td></tr>
+        <tr><td class="sub-item">Discovery workshop</td><td>2-day offsite with 8 Revelations stakeholders, Hyderabad. Facilitation, documentation, video recording.</td><td class="num">₹1,50,000</td><td class="num">Wk 1</td></tr>
+        <tr><td class="sub-item">Competitive deep-dive</td><td>Sugar Free, Tata NQ, Equal, 12 stevia brands, 5 international FOS/prebiotic brands. Pricing, claims, distribution, social analysis.</td><td class="num">₹2,00,000</td><td class="num">Wk 1-4</td></tr>
+        <tr><td class="sub-item">Consumer survey</td><td>500 respondents, 4 metros (Delhi, Mumbai, Bangalore, Hyderabad), online panel via QuestionPro. 25 questions, category usage + willingness-to-pay.</td><td class="num">₹3,50,000</td><td class="num">Wk 2-4</td></tr>
+        <tr><td class="sub-item">Focus groups</td><td>4 groups × 8 participants × 2 hours. 2 in Hyderabad, 1 in Bangalore, 1 in Mumbai. Facility rental + moderator + incentives (₹1,500/participant).</td><td class="num">₹4,80,000</td><td class="num">Wk 3-6</td></tr>
+        <tr><td class="sub-item">Persona development</td><td>6 buyer personas with psychographics, media habits, purchase triggers. Validated against survey data.</td><td class="num">₹1,20,000</td><td class="num">Wk 5-6</td></tr>
+        <tr><td class="sub-item">Pricing strategy</td><td>Van Westendorp analysis on survey data. Price sensitivity meter. Optimal price point per SKU. Competitive price mapping.</td><td class="num">₹2,00,000</td><td class="num">Wk 4-7</td></tr>
+        <tr><td class="sub-item">Brand strategy bible</td><td>40-page document: positioning, architecture, voice & tone, messaging hierarchy, visual direction. 2 revision rounds.</td><td class="num">₹5,00,000</td><td class="num">Wk 5-8</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A2. Naming & Trademark — ₹6,00,000</td></tr>
+        <tr><td class="sub-item">TM comprehensive search</td><td>Top 3 names × India Class 30 + Class 5. Madrid Protocol pre-check for US/EU. Via Anand & Anand or equivalent IP firm.</td><td class="num">₹1,50,000</td><td class="num">Wk 1-2</td></tr>
+        <tr><td class="sub-item">TM filing</td><td>2 classes (30 + 5) × 1 name. Government fees + attorney fees. Expedited filing.</td><td class="num">₹45,000</td><td class="num">Wk 3</td></tr>
+        <tr><td class="sub-item">Domain acquisition</td><td>.com (if available) + .in + .co.in + .health. Estimated ₹50K-₹2L for .com depending on name. Budget includes broker fees.</td><td class="num">₹2,50,000</td><td class="num">Wk 2-3</td></tr>
+        <tr><td class="sub-item">Social handle reservation</td><td>Instagram, X, YouTube, Facebook, LinkedIn, Threads. Professional reservation across platforms.</td><td class="num">₹25,000</td><td class="num">Wk 3</td></tr>
+        <tr><td class="sub-item">Attorney retainer</td><td>12-month IP attorney retainer for ongoing TM monitoring, opposition proceedings, and advisory.</td><td class="num">₹1,30,000</td><td class="num">Wk 3-ongoing</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A3. Visual Identity System — ₹18,00,000</td></tr>
+        <tr><td class="sub-item">Logo design</td><td>3 concepts → 1 final. 8 variations (horizontal, vertical, icon-only, monochrome, reversed, favicon, app icon, social avatar).</td><td class="num">₹4,00,000</td><td class="num">Wk 3-6</td></tr>
+        <tr><td class="sub-item">Color system</td><td>12-color system with Pantone/CMYK/RGB/HEX. Accessibility testing (WCAG AA). Competitor avoidance mapping.</td><td class="num">₹1,50,000</td><td class="num">Wk 4-6</td></tr>
+        <tr><td class="sub-item">Typography system</td><td>Primary (Playfair Display), secondary (Inter), data (JetBrains Mono), regional (Noto Sans Devanagari). Full scale with pt/mm specs.</td><td class="num">₹1,00,000</td><td class="num">Wk 5-7</td></tr>
+        <tr><td class="sub-item">Custom icon set</td><td>40 icons in SVG, 2 weights (regular + bold). Categories: product, health, usage, trust, social. Style: gold line art, 2px stroke.</td><td class="num">₹3,00,000</td><td class="num">Wk 6-9</td></tr>
+        <tr><td class="sub-item">Brand patterns</td><td>6 repeating patterns (botanical, molecular, geometric, gut-motif, honeycomb, minimal). For packaging backgrounds, social, merch.</td><td class="num">₹1,50,000</td><td class="num">Wk 7-9</td></tr>
+        <tr><td class="sub-item">Brand guidelines PDF</td><td>80-page comprehensive guidelines. Logo usage, color specs, typography, photography direction, do/don't examples.</td><td class="num">₹5,00,000</td><td class="num">Wk 8-10</td></tr>
+        <tr><td class="sub-item">Motion identity</td><td>Logo animation (3s), transition set, loading animation. Lottie/JSON for web. MP4 for social.</td><td class="num">₹2,00,000</td><td class="num">Wk 9-10</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A4. Packaging Design (6 SKUs) — ₹30,00,000</td></tr>
+        <tr><td class="sub-item">Structural design</td><td>6 SKU structural engineering. Hexagonal glass mold design. HDPE mold drawings. Pouch die-cuts. Dropper bottle sourcing.</td><td class="num">₹6,00,000</td><td class="num">Wk 4-8</td></tr>
+        <tr><td class="sub-item">Label/sleeve design</td><td>All 6 SKUs: front panel, back panel, side panels. FSSAI-compliant nutrition panels. Hindi bilingual layouts. 3 rounds revisions.</td><td class="num">₹8,00,000</td><td class="num">Wk 6-10</td></tr>
+        <tr><td class="sub-item">Print-ready files</td><td>AI/PDF files with bleed, crop marks, Pantone callouts, barcode placement. Prepress proofing with vendor.</td><td class="num">₹2,00,000</td><td class="num">Wk 10-11</td></tr>
+        <tr><td class="sub-item">3D mockups</td><td>30 photorealistic renders (5 per SKU) for e-commerce, pitch decks, social. Includes lifestyle scene renders.</td><td class="num">₹3,00,000</td><td class="num">Wk 9-11</td></tr>
+        <tr><td class="sub-item">Packaging consultant</td><td>3-month engagement with FMCG packaging specialist (ex-Hindustan Unilever/Dabur). Material testing, vendor sourcing, cost optimization.</td><td class="num">₹4,50,000</td><td class="num">Wk 4-14</td></tr>
+        <tr><td class="sub-item">Material testing</td><td>Shelf-life testing (accelerated, 6-month equivalent). Migration testing. Drop tests. Moisture barrier (WVTR). 3 accredited labs.</td><td class="num">₹3,50,000</td><td class="num">Wk 8-12</td></tr>
+        <tr><td class="sub-item">Print vendor sourcing</td><td>RFQ to 5 vendors (Parksons, Uflex, Cosmo Films, EPL, Huhtamaki India). Sample runs. Cost negotiation.</td><td class="num">₹3,00,000</td><td class="num">Wk 10-12</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A5. Photography & Video — ₹22,00,000</td></tr>
+        <tr><td class="sub-item">Product photography</td><td>6 SKUs × 10 angles. White background (e-commerce), lifestyle (kitchen counter, breakfast table), macro (powder texture).</td><td class="num">₹5,00,000</td><td class="num">Wk 10-12</td></tr>
+        <tr><td class="sub-item">Styled lifestyle shoots</td><td>15 setups: chai moment, kitchen counter, gym bag, office desk, family breakfast, recipe prep, etc. Props, food stylist, art director.</td><td class="num">₹4,50,000</td><td class="num">Wk 11-12</td></tr>
+        <tr><td class="sub-item">Recipe shoots</td><td>10 recipes with step-by-step photography + short video (30s each). Recipe development + food styling.</td><td class="num">₹3,00,000</td><td class="num">Wk 12-13</td></tr>
+        <tr><td class="sub-item">Brand film</td><td>60-second brand film. Script, director, DOP, talent (1 lead + extras), 2-day shoot, full post-production, music licensing.</td><td class="num">₹6,50,000</td><td class="num">Wk 11-14</td></tr>
+        <tr><td class="sub-item">Social clips</td><td>20 short-form vertical videos (15-30s). Reels/Shorts format. Product reveals, usage demos, before/after, UGC-style.</td><td class="num">₹3,00,000</td><td class="num">Wk 12-14</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A6. Brand Collateral — ₹8,00,000</td></tr>
+        <tr><td class="sub-item">Investor pitch deck</td><td>25 slides, premium design. Market data, financial projections, competitive positioning. Keynote + PPT + PDF.</td><td class="num">₹2,50,000</td><td class="num">Wk 10-12</td></tr>
+        <tr><td class="sub-item">Product sell sheets</td><td>6 single-page PDFs (1 per SKU). For retail buyer meetings. Print-ready + digital.</td><td class="num">₹1,20,000</td><td class="num">Wk 11-13</td></tr>
+        <tr><td class="sub-item">Trade presentation</td><td>15-slide deck for retail chain buyers (Reliance, DMart, BigBasket, Blinkit category managers).</td><td class="num">₹1,00,000</td><td class="num">Wk 12-13</td></tr>
+        <tr><td class="sub-item">Doctor detailing kit</td><td>A5 brochure + sampling sachets + clinical evidence summary. For endocrinologists, diabetologists, nutritionists.</td><td class="num">₹1,30,000</td><td class="num">Wk 12-14</td></tr>
+        <tr><td class="sub-item">Recipe booklet + sampling kits</td><td>20-page recipe booklet (print run: 5,000). Sampling kits: branded box with 5 sachets + recipe card. 1,000 kits.</td><td class="num">₹2,00,000</td><td class="num">Wk 13-14</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A7. First Inventory Run — ₹30,00,000</td></tr>
+        <tr><td class="sub-item">sc-FOS raw material</td><td>1,500 kg at ₹250/kg. Enough for 10,000 units across 5 SKUs (liquid drops deferred to Month 5).</td><td class="num">₹3,75,000</td><td class="num">Wk 10</td></tr>
+        <tr><td class="sub-item">Packaging materials</td><td>10,000 units: glass jars (2,000 × ₹12), HDPE jars (4,000 × ₹6), sachets (2,000 boxes × ₹32), pouches (2,000 × ₹16).</td><td class="num">₹7,56,000</td><td class="num">Wk 10-11</td></tr>
+        <tr><td class="sub-item">Contract manufacturing</td><td>Filling, sealing, labeling, QC at contract manufacturer. FSSAI-licensed facility in Hyderabad/Pune. 10,000 units.</td><td class="num">₹6,00,000</td><td class="num">Wk 11-13</td></tr>
+        <tr><td class="sub-item">QC testing</td><td>3 accredited labs: microbiological, heavy metals, FOS purity (HPLC), shelf-life validation. Per-batch + release testing.</td><td class="num">₹3,50,000</td><td class="num">Wk 12-13</td></tr>
+        <tr><td class="sub-item">3PL warehouse setup</td><td>Warehouse in Hyderabad. Racking, inventory system, cold chain assessment (FOS is stable but needs dry storage). 3-month advance.</td><td class="num">₹4,50,000</td><td class="num">Wk 11-14</td></tr>
+        <tr><td class="sub-item">Shipper cartons + secondary packaging</td><td>Corrugated shippers: 5-ply, printed. Master cartons for each SKU. 500 shippers.</td><td class="num">₹1,69,000</td><td class="num">Wk 12-13</td></tr>
+        <tr><td class="sub-item">Buffer for wastage/testing</td><td>5% wastage buffer on raw material and packaging. Plus samples for photography, events, influencer seeding.</td><td class="num">₹3,00,000</td><td class="num">—</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">A8. Contingency — ₹6,00,000</td></tr>
+        <tr><td class="sub-item">Unallocated buffer</td><td>Scope changes, additional research rounds, regulatory surprises, design iterations beyond contracted revisions, FSSAI registration delays.</td><td class="num">₹6,00,000</td><td class="num">—</td></tr>
+
+        <tr class="total-row"><td colspan="2"><strong>Engine A Total</strong></td><td class="num"><strong>₹1,40,00,000</strong></td><td class="num">14 Weeks</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ENGINE B -->
+  <div class="budget-phase" style="border-left: 4px solid var(--orange);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap;">
+      <div>
+        <h3 style="color:var(--ink);">Engine B — Digital Launch & Growth</h3>
+        <div class="phase-period">Month 3 → Month 9 (overlaps Engine A tail)</div>
+      </div>
+      <div class="phase-total">₹4,85,00,000</div>
+    </div>
+    <p style="margin:12px 0 0; color:var(--ink-70);">Go live on all digital channels. Performance marketing, marketplace onboarding, website, and team hiring.</p>
+
+    <table class="line-item-table">
+      <thead><tr><th>Line Item</th><th>Detail</th><th style="text-align:right;">Cost</th><th style="text-align:right;">Timing</th></tr></thead>
+      <tbody>
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">B1. Website & Tech Stack — ₹28,00,000</td></tr>
+        <tr><td class="sub-item">Shopify Plus setup</td><td>Theme customization, product pages (6 SKUs), subscription module (Bold Subscriptions), checkout optimization. Agency: ₹12L. Shopify Plus: ₹1,994/mo × 12 = ₹23,928.</td><td class="num">₹12,24,000</td><td class="num">M3-4</td></tr>
+        <tr><td class="sub-item">SEO foundation</td><td>Technical SEO audit, 50-page content plan, 20 blog posts (FOS education, recipes, gut health), schema markup, site speed optimization.</td><td class="num">₹6,00,000</td><td class="num">M4-9</td></tr>
+        <tr><td class="sub-item">CRM & email/WhatsApp</td><td>Klaviyo setup (₹12K/mo) + WhatsApp Business API via Wati (₹5K/mo). 12 automated flows: welcome, post-purchase, win-back, subscription reminder, recipe series.</td><td class="num">₹4,50,000</td><td class="num">M4-5</td></tr>
+        <tr><td class="sub-item">Analytics & tracking</td><td>GA4, Meta Pixel, Google Tag Manager, server-side tracking. Conversion API setup. Dashboard (Looker Studio).</td><td class="num">₹2,00,000</td><td class="num">M3-4</td></tr>
+        <tr><td class="sub-item">Payment + logistics integration</td><td>Razorpay (2% + ₹3/txn). Shiprocket 3PL integration (₹28-45/shipment). COD enablement. Shipping rate table.</td><td class="num">₹1,50,000</td><td class="num">M4</td></tr>
+        <tr><td class="sub-item">Tech buffer</td><td>Bug fixes, custom integrations, API rate changes, Shopify app subscriptions (reviews, referrals, upsell).</td><td class="num">₹1,76,000</td><td class="num">M3-9</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">B2. Performance Marketing — ₹1,80,00,000</td></tr>
+        <tr><td class="sub-item">Meta Ads (Instagram + Facebook)</td><td>Month 4-5: ₹3L/mo (testing, audience building). Month 6-7: ₹8L/mo (scaling winners). Month 8-9: ₹12L/mo (peak). Target ROAS: 3x by M7. Budget includes 15% agency fee.</td><td class="num">₹92,00,000</td><td class="num">M4-9</td></tr>
+        <tr><td class="sub-item">Google Ads</td><td>Search (brand + category keywords) + Shopping + YouTube. M4-5: ₹2L/mo. M6-9: ₹5L/mo. PMax campaigns for Shopping.</td><td class="num">₹36,00,000</td><td class="num">M4-9</td></tr>
+        <tr><td class="sub-item">Amazon Ads (Sponsored Products + Brands)</td><td>ACoS target: 25%. M5: ₹1L (listing launch). M6-9: ₹4L/mo ramping. Brand Store + A+ content + video ads.</td><td class="num">₹34,00,000</td><td class="num">M5-9</td></tr>
+        <tr><td class="sub-item">Creative production for ads</td><td>Monthly creative refresh: 20 static + 10 video ads/mo. UGC-style, comparison, testimonial, recipe formats. In-house + freelance.</td><td class="num">₹18,00,000</td><td class="num">M4-9</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">B3. Marketplace Onboarding — ₹22,00,000</td></tr>
+        <tr><td class="sub-item">Amazon listing</td><td>Seller Central registration, brand registry, A+ content (6 SKUs), FBA enrollment, product photography for Amazon, keyword optimization.</td><td class="num">₹4,00,000</td><td class="num">M4-5</td></tr>
+        <tr><td class="sub-item">Quick commerce onboarding</td><td>Blinkit (blinkit.com/sell-on-blinkit), Zepto (brands@zeptonow.com), Swiggy Instamart (partner.instamart@swiggy.in). Listing fees, slotting, dark store stocking.</td><td class="num">₹8,00,000</td><td class="num">M5-6</td></tr>
+        <tr><td class="sub-item">BigBasket + Flipkart</td><td>Vendor registration, catalog setup, promotional slots. BigBasket: BB Now + BB Daily listing.</td><td class="num">₹4,00,000</td><td class="num">M6-7</td></tr>
+        <tr><td class="sub-item">Inventory for marketplaces</td><td>3,000 units for Amazon FBA. 2,000 units for Blinkit/Zepto dark stores. 1,000 units for BigBasket warehouse.</td><td class="num">₹6,00,000</td><td class="num">M5-7</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">B4. Team Hiring (Hyderabad) — ₹42,00,000</td></tr>
+        <tr><td class="sub-item">Digital Marketing Manager</td><td>1 hire. Performance marketing, analytics, growth. CTC: ₹7L/yr. Joining Month 3. 7 months in budget.</td><td class="num">₹4,08,000</td><td class="num">M3</td></tr>
+        <tr><td class="sub-item">Brand Manager</td><td>1 hire. Brand consistency, collateral, partnerships, events. CTC: ₹8L/yr. Joining Month 3.</td><td class="num">₹4,67,000</td><td class="num">M3</td></tr>
+        <tr><td class="sub-item">Content Creator</td><td>1 hire. Social media, blog, email, recipe content. Photo/video capable. CTC: ₹5L/yr. Joining Month 4.</td><td class="num">₹2,50,000</td><td class="num">M4</td></tr>
+        <tr><td class="sub-item">E-commerce Executive</td><td>1 hire. Amazon, Flipkart, BigBasket, Blinkit catalog management, reviews, ads. CTC: ₹4.5L/yr. Joining Month 4.</td><td class="num">₹2,25,000</td><td class="num">M4</td></tr>
+        <tr><td class="sub-item">Supply Chain Coordinator</td><td>1 hire. Inventory, 3PL, vendor management, order fulfillment. CTC: ₹5L/yr. Joining Month 5.</td><td class="num">₹2,08,000</td><td class="num">M5</td></tr>
+        <tr><td class="sub-item">Customer Support</td><td>1 hire. WhatsApp, email, marketplace reviews, returns. CTC: ₹3.5L/yr. Joining Month 5.</td><td class="num">₹1,46,000</td><td class="num">M5</td></tr>
+        <tr><td class="sub-item">Recruitment + onboarding</td><td>Job postings (Naukri Premium ₹45K), background checks, equipment (laptops × 6 = ₹4.2L), office setup in Hyderabad co-working.</td><td class="num">₹8,00,000</td><td class="num">M3-5</td></tr>
+        <tr><td class="sub-item">Office & operations</td><td>Co-working space (WeWork/91springboard Hyderabad), ₹1.5L/mo × 7 months. Includes 6 desks, meeting room access, internet.</td><td class="num">₹10,50,000</td><td class="num">M3-9</td></tr>
+        <tr><td class="sub-item">Software stack</td><td>Slack (₹6K/mo), Notion (₹4K/mo), Canva Pro (₹10K/yr), Adobe CC (₹25K/yr), Zoho Books (₹5K/mo). 7 months.</td><td class="num">₹1,46,000</td><td class="num">M3-9</td></tr>
+        <tr><td class="sub-item">Payroll taxes + benefits</td><td>PF (12%), ESI, Gratuity provision, health insurance (₹5K/head/yr). 6 employees × 7 months avg.</td><td class="num">₹5,00,000</td><td class="num">M3-9</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">B5. Inventory Replenishment — ₹13,00,000</td></tr>
+        <tr><td class="sub-item">Second production run</td><td>Month 6: 15,000 units across all 6 SKUs (including liquid drops launch). sc-FOS: 2,500 kg. Packaging + manufacturing + QC.</td><td class="num">₹8,00,000</td><td class="num">M6</td></tr>
+        <tr><td class="sub-item">Third production run</td><td>Month 8: 20,000 units. Demand-adjusted SKU mix based on M4-7 sales data. Buffer stock for festive season (Navratri/Diwali).</td><td class="num">₹5,00,000</td><td class="num">M8</td></tr>
+
+        <tr class="total-row"><td colspan="2"><strong>Engine B Total</strong></td><td class="num"><strong>₹4,85,00,000</strong></td><td class="num">7 Months</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ENGINE C -->
+  <div class="budget-phase" style="border-left: 4px solid #2D5016;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap;">
+      <div>
+        <h3>Engine C — Scale & Retention</h3>
+        <div class="phase-period">Month 7 → Month 12</div>
+      </div>
+      <div class="phase-total">₹3,75,00,000</div>
+    </div>
+    <p style="margin:12px 0 0; color:var(--ink-70);">Influencer campaigns, PR, offline retail entry, subscription model, and working capital for scaling inventory.</p>
+
+    <table class="line-item-table">
+      <thead><tr><th>Line Item</th><th>Detail</th><th style="text-align:right;">Cost</th><th style="text-align:right;">Timing</th></tr></thead>
+      <tbody>
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">C1. Influencer & Community — ₹65,00,000</td></tr>
+        <tr><td class="sub-item">Macro influencers (3)</td><td>500K-2M followers. Nutrition/fitness/lifestyle. 3 creators × 4 posts each. Rates: ₹3-5L per creator per campaign.</td><td class="num">₹15,00,000</td><td class="num">M7-10</td></tr>
+        <tr><td class="sub-item">Micro influencers (25)</td><td>10K-100K followers. Health, food, mommy bloggers. 25 creators × 2 posts each. Rates: ₹15-40K per creator.</td><td class="num">₹10,00,000</td><td class="num">M7-12</td></tr>
+        <tr><td class="sub-item">Doctor/nutritionist KOLs (10)</td><td>Endocrinologists, diabetologists, clinical nutritionists. LinkedIn + Instagram content. Honorarium + product supply.</td><td class="num">₹8,00,000</td><td class="num">M7-12</td></tr>
+        <tr><td class="sub-item">Influencer product seeding</td><td>500 premium unboxing kits (hex jar + recipe booklet + personalized card). Production + shipping at ₹800/kit.</td><td class="num">₹4,00,000</td><td class="num">M7-8</td></tr>
+        <tr><td class="sub-item">Community building</td><td>WhatsApp community (Gut Health Club). Monthly recipe challenges. User-generated content contests. Community manager (freelance).</td><td class="num">₹6,00,000</td><td class="num">M7-12</td></tr>
+        <tr><td class="sub-item">Affiliate program</td><td>10% commission via GoAffPro. Affiliate dashboard, tracking links, monthly payouts. Setup + 6-month operation.</td><td class="num">₹5,00,000</td><td class="num">M8-12</td></tr>
+        <tr><td class="sub-item">Sampling programs</td><td>Gym partnerships (Gold's, Cult.fit — 50 locations × 100 sachets). Health expo booths (2 events). Doctor office sampling (200 clinics × 10 kits).</td><td class="num">₹12,00,000</td><td class="num">M7-12</td></tr>
+        <tr><td class="sub-item">Referral rewards</td><td>"Give ₹100, Get ₹100" referral program. Budget for 2,000 successful referrals at ₹200 total cost per referral.</td><td class="num">₹5,00,000</td><td class="num">M8-12</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">C2. PR & Events — ₹25,00,000</td></tr>
+        <tr><td class="sub-item">PR agency retainer</td><td>6-month retainer with health/lifestyle PR agency (Edelman, Adfactors, or boutique). Media relations, press releases, feature pitches.</td><td class="num">₹12,00,000</td><td class="num">M7-12</td></tr>
+        <tr><td class="sub-item">Launch event</td><td>Hyderabad launch event: 100 guests (media, influencers, doctors, retail buyers). Venue, F&B, AV, anchoring, press kits.</td><td class="num">₹6,00,000</td><td class="num">M7</td></tr>
+        <tr><td class="sub-item">Awards & certifications</td><td>Apply for: Product of the Year (₹5L entry), Great Taste Award, Clean Label Project certification. Application + testing fees.</td><td class="num">₹4,00,000</td><td class="num">M8-12</td></tr>
+        <tr><td class="sub-item">Thought leadership content</td><td>Ashok Reddy media training + 6 authored articles (YourStory, Inc42, ET Health, Mint). Ghostwriting + placement.</td><td class="num">₹3,00,000</td><td class="num">M7-12</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">C3. Offline Retail Entry — ₹35,00,000</td></tr>
+        <tr><td class="sub-item">Modern trade listing</td><td>Reliance Smart, DMart, Star Bazaar. Listing fees (₹5-15K per store per SKU). Target: 200 stores by M12.</td><td class="num">₹12,00,000</td><td class="num">M9-12</td></tr>
+        <tr><td class="sub-item">In-store visibility</td><td>Shelf talkers, end-cap displays, checkout counter stands, dangler signage. Design + production for 200 stores.</td><td class="num">₹5,00,000</td><td class="num">M9-12</td></tr>
+        <tr><td class="sub-item">Distributor setup</td><td>Appointment of 3 regional distributors (South, West, North). Trade margins, credit terms, initial stocking incentives.</td><td class="num">₹8,00,000</td><td class="num">M8-10</td></tr>
+        <tr><td class="sub-item">Retail sales team</td><td>2 field sales representatives (Hyderabad + Bangalore). CTC: ₹4L/yr each. Travel allowance: ₹10K/mo each. 4-month budget.</td><td class="num">₹4,50,000</td><td class="num">M9-12</td></tr>
+        <tr><td class="sub-item">Retail inventory</td><td>5,000 units for modern trade initial fill. Consignment/sale-or-return terms for first 90 days.</td><td class="num">₹5,50,000</td><td class="num">M9</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">C4. Subscription & Retention — ₹15,00,000</td></tr>
+        <tr><td class="sub-item">Subscription infrastructure</td><td>Bold Subscriptions on Shopify. "Subscribe & Save 15%." Monthly/bi-monthly cadence. Churn prediction + win-back flows.</td><td class="num">₹3,00,000</td><td class="num">M7-8</td></tr>
+        <tr><td class="sub-item">Loyalty program</td><td>"Gold Points" — earn points per purchase, redeem for discounts or exclusive products. Smile.io integration.</td><td class="num">₹2,00,000</td><td class="num">M8</td></tr>
+        <tr><td class="sub-item">Email/WhatsApp automation</td><td>24 automated flows covering full customer lifecycle. Segmented campaigns. Monthly newsletter. WhatsApp broadcast (Wati).</td><td class="num">₹4,00,000</td><td class="num">M7-12</td></tr>
+        <tr><td class="sub-item">Subscription box design</td><td>Premium monthly box: product + recipe card + surprise sample. Custom mailer box design + production (MOQ 2,000).</td><td class="num">₹3,00,000</td><td class="num">M8-9</td></tr>
+        <tr><td class="sub-item">NPS & feedback system</td><td>Post-purchase NPS survey. Review generation (Judge.me). Feedback loop to product team. Quarterly CX report.</td><td class="num">₹3,00,000</td><td class="num">M7-12</td></tr>
+
+        <tr><td colspan="4" style="font-weight:700; background:var(--white); padding-top:16px;">C5. Working Capital & Inventory — ₹35,00,000</td></tr>
+        <tr><td class="sub-item">Q3 production run</td><td>Month 9: 30,000 units. Festive season stock (Navratri, Diwali, Dussehra). Gift packs: hex jar + sachet box combo.</td><td class="num">₹12,00,000</td><td class="num">M9</td></tr>
+        <tr><td class="sub-item">Q4 production run</td><td>Month 11: 40,000 units. New Year + Republic Day season. SKU mix optimized by 8 months of sales data.</td><td class="num">₹15,00,000</td><td class="num">M11</td></tr>
+        <tr><td class="sub-item">Cash flow buffer</td><td>Marketplace payment cycles (Amazon: 14-day, Blinkit: 30-day). COD float. Distributor credit (30-day terms).</td><td class="num">₹8,00,000</td><td class="num">M7-12</td></tr>
+
+        <tr class="total-row"><td colspan="2"><strong>Engine C Total</strong></td><td class="num"><strong>₹3,75,00,000</strong></td><td class="num">6 Months</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRAND TOTAL -->
+  <div class="card" style="border: 2px solid var(--ink); background: var(--warm);">
+    <h3 style="margin-bottom:16px;">₹10 Crore — Grand Summary</h3>
+    <table>
+      <thead><tr><th>Engine</th><th>Period</th><th>Focus</th><th style="text-align:right;">Amount</th><th style="text-align:right;">% of Total</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Engine A</strong></td><td>Month 1-3</td><td>Brand foundation: strategy, naming, identity, packaging, first inventory, photography</td><td class="num">₹1,40,00,000</td><td class="num">14.0%</td></tr>
+        <tr><td><strong>Engine B</strong></td><td>Month 3-9</td><td>Digital launch: website, performance marketing, marketplaces, team hiring, inventory</td><td class="num">₹4,85,00,000</td><td class="num">48.5%</td></tr>
+        <tr><td><strong>Engine C</strong></td><td>Month 7-12</td><td>Scale: influencers, PR, retail, subscription, working capital</td><td class="num">₹3,75,00,000</td><td class="num">37.5%</td></tr>
+        <tr class="total-row"><td colspan="3"><strong>Total At-Cost Investment</strong></td><td class="num"><strong>₹10,00,00,000</strong></td><td class="num"><strong>100%</strong></td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:13px; color:var(--grey); margin-top:12px;"><strong>Not included in ₹10Cr:</strong> Inspire Labs team cost (~₹63L/yr for 6-person squad: Account Director, Brand Strategist, Performance Marketer, Content Lead, Design Lead, Tech Lead) is absorbed as sweat equity per the 75:25 Rev-Led partnership structure. CEO Ashok Reddy's time is also not costed.</p>
+  </div>
+
+  <!-- MONTHLY CASH FLOW -->
+  <h3 style="margin-top:32px;">Monthly Cash Deployment</h3>
+  <p style="color:var(--grey); margin-bottom:16px;">When the money actually leaves the bank account.</p>
+  <table>
+    <thead><tr><th>Month</th><th>Engine(s)</th><th>Key Activities</th><th style="text-align:right;">Spend</th><th style="text-align:right;">Cumulative</th></tr></thead>
+    <tbody>
+      <tr><td class="num">M1</td><td>A</td><td>Discovery workshop, TM search, consumer survey fielded, competitive deep-dive</td><td class="num">₹28,00,000</td><td class="num">₹28,00,000</td></tr>
+      <tr><td class="num">M2</td><td>A</td><td>Name locked, domains acquired, logo design starts, focus groups, brand strategy draft</td><td class="num">₹35,00,000</td><td class="num">₹63,00,000</td></tr>
+      <tr><td class="num">M3</td><td>A + B</td><td>Identity system complete, packaging design in progress, Shopify build starts, first 2 hires join</td><td class="num">₹52,00,000</td><td class="num">₹1,15,00,000</td></tr>
+      <tr><td class="num">M4</td><td>A + B</td><td>Packaging print-ready, photography shoots, website live, Meta/Google ads launch (₹5L), Amazon listing</td><td class="num">₹78,00,000</td><td class="num">₹1,93,00,000</td></tr>
+      <tr><td class="num">M5</td><td>B</td><td>First orders ship, Blinkit/Zepto onboarding, ads ramp to ₹10L/mo, liquid drops SKU launch, 2 more hires</td><td class="num">₹82,00,000</td><td class="num">₹2,75,00,000</td></tr>
+      <tr><td class="num">M6</td><td>B</td><td>Quick commerce live on all 3 platforms, 2nd production run (15K units), BigBasket + Flipkart listing</td><td class="num">₹88,00,000</td><td class="num">₹3,63,00,000</td></tr>
+      <tr><td class="num">M7</td><td>B + C</td><td>Launch event, PR agency starts, influencer wave 1 (macro), subscription launch, community building</td><td class="num">₹95,00,000</td><td class="num">₹4,58,00,000</td></tr>
+      <tr><td class="num">M8</td><td>B + C</td><td>Ads at peak spend (₹20L/mo), 3rd production run (20K units), affiliate program, loyalty program, distributor setup</td><td class="num">₹1,05,00,000</td><td class="num">₹5,63,00,000</td></tr>
+      <tr><td class="num">M9</td><td>B + C</td><td>Modern trade entry (200 stores), festive production run (30K units), retail field team deployed</td><td class="num">₹1,12,00,000</td><td class="num">₹6,75,00,000</td></tr>
+      <tr><td class="num">M10</td><td>C</td><td>Navratri/Dussehra campaigns, in-store promotions, influencer wave 2 (micro), awards submissions</td><td class="num">₹98,00,000</td><td class="num">₹7,73,00,000</td></tr>
+      <tr><td class="num">M11</td><td>C</td><td>Diwali campaign peak, Q4 production (40K units), subscription box launch, NPS baseline established</td><td class="num">₹1,15,00,000</td><td class="num">₹8,88,00,000</td></tr>
+      <tr><td class="num">M12</td><td>C</td><td>Year-end review. 12-month data analysis. Year 2 plan. Final working capital deployment.</td><td class="num">₹1,12,00,000</td><td class="num">₹10,00,00,000</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 6: TIMELINE                       -->
+<!-- ══════════════════════════════════════════ -->
+<section id="timeline">
+  <div class="section-label">06 · Timeline</div>
+  <div class="section-title">12-Month Execution Roadmap</div>
+  <div class="section-desc">From signing to ₹10Cr deployed, showing what happens each month and the key milestone that gates the next phase.</div>
+
+  <table>
+    <thead><tr><th>Month</th><th>Gate Milestone</th><th>Key Deliverables</th><th>Engine</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><strong>Discovery Complete</strong></td><td>Workshop done. TM search filed on top 3 names. Survey live. Competitive deep-dive in progress.</td><td>A</td></tr>
+      <tr><td class="num">2</td><td><strong>Name Locked</strong></td><td>TM cleared. Domains acquired. Social handles reserved. TM filed. Logo design begins (3 concepts).</td><td>A</td></tr>
+      <tr><td class="num">3</td><td><strong>Identity Sign-Off</strong></td><td>Logo finalized. Color system, typography, icon set complete. 80-page brand guidelines delivered. Packaging design in progress. Shopify build begins. First 2 team hires join.</td><td>A+B</td></tr>
+      <tr><td class="num">4</td><td><strong>Website Live + First Ads</strong></td><td>Shopify live. All 6 SKU packaging print-ready. Photography + video shoots complete. Meta + Google ads launch. Amazon seller account active.</td><td>A+B</td></tr>
+      <tr><td class="num">5</td><td><strong>First Orders Ship</strong></td><td>10,000 units manufactured, QC'd, warehoused. First D2C orders fulfilled. Quick commerce onboarding (Blinkit, Zepto, Instamart). Liquid drops SKU manufacturing begins.</td><td>B</td></tr>
+      <tr><td class="num">6</td><td><strong>All Digital Channels Live</strong></td><td>Amazon, Flipkart, BigBasket, Blinkit, Zepto, Instamart — all live. 2nd production run (15K units). CRM flows running (12 automations).</td><td>B</td></tr>
+      <tr><td class="num">7</td><td><strong>Brand Launch Event</strong></td><td>PR agency engaged. Hyderabad launch event (100 guests). First macro influencer posts live. Subscription module active. Community (WhatsApp) seeded with 500 members.</td><td>B+C</td></tr>
+      <tr><td class="num">8</td><td><strong>Peak Digital Spend</strong></td><td>Ads at ₹20L/mo. 3rd production run (20K units). Affiliate program live. Loyalty program launched. 3 distributors appointed.</td><td>B+C</td></tr>
+      <tr><td class="num">9</td><td><strong>Retail Entry</strong></td><td>200 modern trade stores stocked (Reliance, DMart, Star). Field sales team active. Festive inventory (30K units). In-store POS materials deployed.</td><td>B+C</td></tr>
+      <tr><td class="num">10</td><td><strong>Festive Season Peak</strong></td><td>Navratri/Dussehra campaigns. Gift pack combos in stores. 25 micro influencer posts live. Awards submissions sent.</td><td>C</td></tr>
+      <tr><td class="num">11</td><td><strong>Diwali Campaign</strong></td><td>Diwali gift packs. Peak revenue month. Q4 production (40K units). Subscription box launched. NPS baseline: target >60.</td><td>C</td></tr>
+      <tr><td class="num">12</td><td><strong>Year 1 Review</strong></td><td>12-month P&L. Channel-wise revenue analysis. CAC/LTV metrics. Year 2 plan drafted. Series A data room prepared (if applicable).</td><td>C</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <div class="icon">&#9670;</div>
+    <div class="text"><strong>Year 1 targets:</strong> Revenue: ₹1.5-2.5Cr (conservative, based on Whole Truth's first-year trajectory adjusted for smaller category). Units sold: 50,000-80,000. D2C website: 40% of revenue. Marketplaces (Amazon + quick commerce): 35%. Modern trade: 25%. Subscription: 500+ active subscribers by M12. NPS: >60.</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 7: MARKET CONTEXT                 -->
+<!-- ══════════════════════════════════════════ -->
 <section id="market">
   <div class="section-label">07 · Market Context</div>
   <div class="section-title">Why This Timing Is Right</div>
-  <div class="section-desc">The Indian sugar substitute market and health food ecosystem are at an inflection point. Key data points that inform the timing of this launch.</div>
+  <div class="section-desc">The Indian sugar substitute market and health food ecosystem are at an inflection point.</div>
 
   <div class="stat-row">
     <div class="stat-box">
@@ -449,27 +871,62 @@
     <table>
       <thead><tr><th>Signal</th><th>Data</th><th>Implication for sc-FOS</th></tr></thead>
       <tbody>
-        <tr><td><strong>Sugar Free dominance</strong></td><td>94% share of ₹319Cr tabletop category, 4L+ outlets</td><td>Category awareness exists but "chemical sweetener" perception creates opening for natural/prebiotic alternative</td></tr>
-        <tr><td><strong>Clean-label D2C explosion</strong></td><td>Whole Truth (₹216Cr), Yoga Bar (₹202Cr) in FY25. Both 2-3× growth</td><td>Indian consumers proven to pay premium for transparency and clean ingredients in health food</td></tr>
-        <tr><td><strong>Quick commerce as growth engine</strong></td><td>Blinkit 50%+ share, $5.5B total GMV. Fastest channel for health brands</td><td>New distribution model bypasses traditional retail barriers. Launch on Blinkit/Zepto in Month 6</td></tr>
-        <tr><td><strong>FSSAI prebiotic framework</strong></td><td>Re-operationalized 2022 regulations for prebiotic foods. Health claims require substantiation</td><td>sc-FOS has strongest clinical backing (17 RCTs, 713 participants in latest meta-analysis). Can make verified claims</td></tr>
-        <tr><td><strong>FOS clinical validation</strong></td><td>2025 meta-analysis: 17 RCTs, 713 subjects. Proven Bifidobacterium growth, constipation relief, SCFAs production</td><td>Strongest evidence base of any prebiotic sweetener. Can substantiate FSSAI health claims</td></tr>
-        <tr><td><strong>PepsiCo acquired Poppi</strong></td><td>$1.95B acquisition (March 2025) for prebiotic soda brand</td><td>Global validation that prebiotic + beverage/food = massive category. No Indian player yet</td></tr>
+        <tr><td><strong>Sugar Free dominance</strong></td><td>94% share of ₹319Cr tabletop category, 4L+ outlets</td><td>Category awareness exists but "chemical" perception creates opening for natural/prebiotic alternative</td></tr>
+        <tr><td><strong>Clean-label D2C explosion</strong></td><td>Whole Truth ₹216Cr, Yoga Bar ₹202Cr FY25. Both 2-3× YoY growth</td><td>Indian consumers proven to pay premium for transparency and clean ingredients</td></tr>
+        <tr><td><strong>Quick commerce as growth engine</strong></td><td>Blinkit 50%+ share, $5.5B total GMV. Fastest channel for health brands</td><td>New distribution bypasses traditional retail barriers. Launch on Blinkit/Zepto in Month 6</td></tr>
+        <tr><td><strong>Prebiotic category validation</strong></td><td>Cosmix acquired by Marico at ₹375Cr (60% stake for ₹225.67Cr). ₹100Cr annualized revenue.</td><td>Indian FMCG giants paying premium for prebiotic brands. Category is investable.</td></tr>
+        <tr><td><strong>Global prebiotic M&A</strong></td><td>PepsiCo acquired Poppi for $1.95B (March 2025). Prebiotic soda.</td><td>Prebiotic + food/beverage = massive category globally. No Indian branded FOS player exists.</td></tr>
+        <tr><td><strong>FOS clinical validation</strong></td><td>2025 meta-analysis: 17 RCTs, 713 subjects. Proven gut health benefits.</td><td>Strongest evidence base of any prebiotic sweetener. Can substantiate FSSAI health claims.</td></tr>
+        <tr><td><strong>FSSAI prebiotic framework</strong></td><td>Re-operationalized 2022 regulations for prebiotic foods</td><td>Regulatory path is clear. First-mover can shape category standards.</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="callout">
     <div class="icon">&#9670;</div>
-    <div class="text"><strong>Bottom line:</strong> The market is ready. Consumer demand for clean-label health food is proven at scale. Distribution via quick commerce is available without massive retail capex. Clinical evidence for FOS is the strongest it has ever been. And no one has claimed the "prebiotic sweetener" position in India. First-mover advantage is real — but the window is 12-18 months before major FMCG players enter.</div>
+    <div class="text"><strong>Bottom line:</strong> The market is ready. Consumer demand for clean-label health food is proven at scale. Distribution via quick commerce is available without massive retail capex. Clinical evidence for FOS is the strongest it has ever been. And no one has claimed "prebiotic sweetener" in India. First-mover advantage is real — but the window is 12-18 months before major FMCG players enter.</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 8: NEXT STEPS                     -->
+<!-- ══════════════════════════════════════════ -->
+<section id="next">
+  <div class="section-label">08 · Next Steps</div>
+  <div class="section-title">Four Decisions Needed</div>
+  <div class="section-desc">Once these are resolved, Inspire Labs begins Engine A execution within 5 business days.</div>
+
+  <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+    <div class="card" style="border-top: 3px solid var(--orange);">
+      <div class="rank">Decision 1</div>
+      <h3>Brand Name</h3>
+      <p>Select top 3 from the 10 candidates. Inspire Labs runs TM search (₹45K, 5 days) + consumer pulse test (₹1.2L, 4 days) on those 3. Final name locked by Day 12.</p>
+    </div>
+    <div class="card" style="border-top: 3px solid var(--orange);">
+      <div class="rank">Decision 2</div>
+      <h3>Identity Direction</h3>
+      <p>Approve or refine the gold/cream/amber color system, Playfair Display + Inter typography, and hexagonal glass hero jar. This becomes the brief for the design team.</p>
+    </div>
+    <div class="card" style="border-top: 3px solid var(--orange);">
+      <div class="rank">Decision 3</div>
+      <h3>₹10Cr Go/No-Go</h3>
+      <p>Approve the full 12-month plan. Capital deployment starts with ₹40L at signing (Month 1), ₹50L at Month 2 (design phase), ₹50L at Month 3 (production + hiring).</p>
+    </div>
+    <div class="card" style="border-top: 3px solid var(--orange);">
+      <div class="rank">Decision 4</div>
+      <h3>Partnership Structure</h3>
+      <p>Confirm 75:25 Rev-Led partnership. Inspire Labs absorbs ~₹63L/yr team cost as sweat equity. Revenue sharing, equity terms, and exit provisions per the partnership agreement.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="icon">&#9670;</div>
+    <div class="text"><strong>Inspire Labs Commitment:</strong> Our 6-person team (Account Director, Brand Strategist, Performance Marketer, Content Lead, Design Lead, Tech Lead) is deployed full-time on this project from Day 1. Team cost (~₹63L annually) is absorbed as sweat equity — not charged to the ₹10Cr project budget. We are invested in this brand's success because our return comes from the brand's growth, not from fees.</div>
   </div>
 </section>
 </div>
 
 <!-- ══ FOOTER ══ -->
-
-
-
 <footer class="il-footer">
   <div><strong>Inspire Labs</strong> · sc-FOS Consumer Brand GTM Suite · Confidential</div>
   <div><a href="index.html">Back to Index</a></div>
